@@ -12,17 +12,23 @@ harder check than a pure structural scan; it needs semantic comparison").
 So this checker is two stages:
 
   STAGE A (mechanical, this script does it in full, no network):
-    For each candidate surface page, extract the opening definitional block
-    (H1 to first H2) and pull out any sentence that looks like it's defining
+    For each candidate surface page, scan the whole page (not just the
+    opening summary -- see find_definition_candidates_with_context()'s
+    docstring for why) for any sentence that looks like it's defining
     "skill" / "plugin" / "connector" / "connection" ("A plugin is...",
-    "A connection is...", "A plugin bundles..."). Also apply Rule 1's own
-    length heuristic (more than ~2 sentences of definitional content before
-    the first surface-specific heading is a possible canonical-substitute,
-    flagged independent of any semantic judgment).
+    "A connection is...", "A plugin bundles..."). For each one, also
+    capture *where* it lives: the enclosing section heading, the full
+    paragraph it's part of, and that section's total sentence count --
+    context a first version of this script didn't collect, which caused
+    a real under-call (see below). Separately, the opening block (H1 to
+    first H2) gets Rule 1's own length heuristic (more than ~2 sentences
+    of definitional content before the first surface-specific heading is
+    a possible canonical-substitute).
 
   STAGE B (semantic, needs a model in the loop):
-    For each Stage A candidate, compare its local text against the current
-    canonical definition and classify:
+    For each Stage A candidate, compare its sentence -- plus its section
+    heading and surrounding paragraph -- against the current canonical
+    definition and classify:
       CONSISTENT      - faithful summary/grounding, no new claim.
       DRIFT           - asserts a capability/component/constraint the
                         canonical page doesn't have, or contradicts it.
@@ -31,6 +37,11 @@ So this checker is two stages:
                         happens to share a name or near-synonym (Rule 1's
                         own worked edge case: Claude Tag's admin-scoped
                         "connection" vs. the personal "connector").
+    Stage B is also asked to separately flag a Rule 5 concern (a section
+    restating authoring/build content that belongs on a different page)
+    when the surrounding context suggests one, even though that doesn't
+    change the Rule 1 verdict on the sentence itself.
+
     This needs real semantic judgment, which is why it's built as an actual
     Anthropic-API call (see call_model() below) rather than another regex --
     that's the honest architecture, not a shortcut. If ANTHROPIC_API_KEY is
@@ -40,6 +51,16 @@ So this checker is two stages:
     same script pointed at a real key -- can complete it. See
     output/semantic_drift_findings.md for this run's actual Stage B verdicts
     and how they were produced.
+
+    NOTE ON HOW THIS CONTEXT-AWARE VERSION CAME ABOUT: the first version of
+    this script's Stage B prompt handed the model only the isolated matched
+    sentence. That version scored government/desktop/skills.md's "A skill is
+    a folder named after the skill, holding a SKILL.md file" as CONSISTENT,
+    correctly, on Rule 1's own narrow terms -- but missed that the sentence
+    opens a full authoring/build walkthrough that's a real Rule 5(b)
+    violation, which only became visible on rereading the whole page by
+    hand. This version exists specifically to close that gap by giving
+    Stage B the same section-level context a human reviewer would use.
 
 USAGE
     python3 checker/semantic_drift_checker.py
@@ -162,12 +183,84 @@ def split_sentences(block: str) -> list:
 
 def find_definition_candidates(block: str):
     """Returns list of (primitive, local_text) for each definitional
-    sentence found in the block."""
+    sentence found in the block. Superseded by
+    find_definition_candidates_with_context() below -- kept because
+    canonical_definition() still uses the plain sentence-list shape for
+    the (short, single-section) canonical overview pages, where section
+    context doesn't apply."""
     candidates = []
     for sentence in split_sentences(block):
         m = DEFINITION_RE.search(sentence)
         if m:
             candidates.append((m.group(1).lower(), sentence))
+    return candidates
+
+
+def find_definition_candidates_with_context(text: str):
+    """Like find_definition_candidates(), but also returns *where* the
+    sentence lives: which H2 section it's under (or "(opening summary)"),
+    the full paragraph it's part of, and how many sentences that whole
+    section runs to.
+
+    This exists to close a real gap the first version of this script had.
+    Candidate #5 in this run's first pass -- government/desktop/skills.md's
+    "A skill is a folder named after the skill, holding a SKILL.md file" --
+    scored CONSISTENT when judged as an isolated sentence, because on its
+    own it doesn't contradict canonical or claim a new capability. But that
+    sentence is the opening line of a full "Building and deploying your own
+    skills" section that goes on to re-derive frontmatter format, packaging,
+    and upload steps -- a Rule 5(b) violation (restating authoring/build
+    content a Tier 3 page shouldn't carry) that the isolated-sentence view
+    had no way to see. Handing Stage B the section heading, the full
+    paragraph, and the section's total length is what would have let it
+    catch that the first time, instead of needing a human to reread the
+    whole page afterward. See output/semantic_drift_findings.md for the
+    corrected verdict this produced.
+    """
+    lines = strip_docs_index_box(text).splitlines()
+    start = None
+    for i, line in enumerate(lines):
+        if line.startswith("# "):
+            start = i + 1
+            break
+    if start is None:
+        return []
+
+    # Walk the body, splitting into (heading, section_lines) chunks on H2s.
+    sections = []
+    heading = "(opening summary)"
+    buf = []
+    for line in lines[start:]:
+        if line.startswith("## "):
+            sections.append((heading, buf))
+            heading = line[3:].strip()
+            buf = []
+        else:
+            buf.append(line)
+    sections.append((heading, buf))
+
+    candidates = []
+    for heading, section_lines in sections:
+        section_text = "\n".join(section_lines)
+        section_sentence_count = len(split_sentences(section_text))
+        # Paragraphs = blank-line-separated chunks of the raw section text,
+        # so a matched sentence can be reported with its full surrounding
+        # paragraph, not just itself.
+        paragraphs = [p for p in re.split(r"\n\s*\n", section_text) if p.strip()]
+        for para in paragraphs:
+            para_sentences = split_sentences(para)
+            for sentence in para_sentences:
+                m = DEFINITION_RE.search(sentence)
+                if m:
+                    candidates.append(
+                        {
+                            "primitive": m.group(1).lower(),
+                            "sentence": sentence,
+                            "section_heading": heading,
+                            "paragraph_context": " ".join(para_sentences),
+                            "section_sentence_count": section_sentence_count,
+                        }
+                    )
     return candidates
 
 
@@ -181,23 +274,31 @@ def canonical_definition(primitive: str) -> str:
     return " ".join(sentences[:2])
 
 
-PROMPT_TEMPLATE = """You are checking a documentation style rule: a surface page's local restatement of a primitive's definition must not introduce a new capability, component, or constraint claim beyond what the canonical definition establishes, and must not contradict it. A surface page MAY instead be describing a genuinely distinct concept that happens to share a name or near-synonym with the canonical primitive -- that is not a violation.
+PROMPT_TEMPLATE = """You are checking two documentation style rules against a surface page.
+
+Rule 1: a local restatement of a primitive's definition must not introduce a new capability, component, or constraint claim beyond what the canonical definition establishes, and must not contradict it. A surface page MAY instead be describing a genuinely distinct concept that happens to share a name or near-synonym with the canonical primitive -- that is not a violation of Rule 1.
+
+Rule 5: a "Use in [Surface]" page may only contain a brief canonical-consistent summary, where the primitive is provisioned on this surface, actual install/enable steps for this surface, and surface-specific limits/admin controls. It must NOT restate authoring/build instructions that belong on the primitive's own build/how-to page instead.
 
 Primitive under test: {primitive}
 Canonical definition (from {canonical_source}):
 \"\"\"{canonical_text}\"\"\"
 
-Local text under review (from {source_page}, surface: {surface}):
+Sentence under review (from {source_page}, surface: {surface}):
 \"\"\"{local_text}\"\"\"
 
-Return exactly one verdict, plus a one-sentence rationale:
-- CONSISTENT: the local text is a faithful summary or grounding of the canonical definition, with no new capability/component/constraint claim.
-- DRIFT: the local text asserts something about the canonical primitive that the canonical definition does not state, or contradicts it.
-- DISTINCT_CONCEPT: the local text is not actually describing the canonical primitive -- it's a different, surface-specific concept that happens to share a name or a similar name.
+Context: this sentence appears under the heading "{section_heading}" on that page, in a section that runs to {section_sentence_count} sentences total. Here is the full paragraph the sentence is part of, for context (the sentence under review may be all or part of this paragraph):
+\"\"\"{paragraph_context}\"\"\"
+
+Return exactly one verdict for the sentence under Rule 1, plus a one-sentence rationale. If the surrounding context (not just the isolated sentence) suggests a separate Rule 5 problem -- e.g. this sentence opens or sits inside a section that is substantially restating authoring/build content rather than surface-specific summary/install/limits content -- say so explicitly in the rationale even though it doesn't change the Rule 1 verdict on the sentence itself.
+
+- CONSISTENT: the sentence is a faithful summary or grounding of the canonical definition, with no new capability/component/constraint claim.
+- DRIFT: the sentence asserts something about the canonical primitive that the canonical definition does not state, or contradicts it.
+- DISTINCT_CONCEPT: the sentence is not actually describing the canonical primitive -- it's a different, surface-specific concept that happens to share a name or a similar name.
 
 Format exactly:
 VERDICT: <verdict>
-RATIONALE: <one sentence>
+RATIONALE: <one sentence, and flag any Rule 5 concern from the context if present>
 """
 
 
@@ -236,8 +337,7 @@ def main():
         block = extract_opening_block(text)
         sentence_count = len(split_sentences(block))
 
-        body = extract_full_body(text)
-        defs = find_definition_candidates(body)
+        defs = find_definition_candidates_with_context(text)
         if not defs:
             candidates.append(
                 {
@@ -247,13 +347,14 @@ def main():
                     "opening_block_sentence_count": sentence_count,
                     "status": "NO_LOCAL_DEFINITION",
                     "note": "Stage A found no sentence matching the definitional pattern "
-                    "('A <primitive> is/are/bundles/adds/extends...') in the opening block. "
+                    "('A <primitive> is/are/bundles/adds/extends...') anywhere on the page. "
                     "Nothing to compare -- correctly abstains rather than forcing a verdict.",
                 }
             )
             continue
 
-        for primitive, local_text in defs:
+        for d in defs:
+            primitive, local_text = d["primitive"], d["sentence"]
             canonical_text = canonical_definition(primitive)
             canonical_source = str(CANONICAL_PAGES[primitive].relative_to(SCRAPE))
             prompt = PROMPT_TEMPLATE.format(
@@ -263,6 +364,9 @@ def main():
                 source_page="/" + rel_path[:-3],
                 surface=surface,
                 local_text=local_text,
+                section_heading=d["section_heading"],
+                section_sentence_count=d["section_sentence_count"],
+                paragraph_context=d["paragraph_context"],
             )
             entry = {
                 "source_page": "/" + rel_path[:-3],
@@ -273,6 +377,9 @@ def main():
                 "opening_block_sentence_count": sentence_count,
                 "length_heuristic_flag": sentence_count > 2,
                 "local_text": local_text,
+                "section_heading": d["section_heading"],
+                "section_sentence_count": d["section_sentence_count"],
+                "paragraph_context": d["paragraph_context"],
                 "canonical_text": canonical_text,
                 "canonical_source": canonical_source,
                 "stage_b_prompt": prompt,
