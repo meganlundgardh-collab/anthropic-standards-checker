@@ -1,14 +1,22 @@
-# Part 3 — Link-validity checker prototype
+# Part 3 — Checker prototypes
 
-An automated checker for Part 2's **Rule 3**: *"Internal links must resolve, and anchor text must match the destination's real title."* Run against a real 50-page slice of claude.com/docs (the exact slice Part 1 audited: all Skills and Plugins pages, all 37 Connectors pages, and 9 previously-examined surface pages).
+Two automated checkers for Part 2's style guide, run against a real 50-page slice of claude.com/docs (the exact slice Part 1 audited: all Skills and Plugins pages, all 37 Connectors pages, and 9 previously-examined surface pages).
 
-Rule 3 was picked over the other four style-guide rules because it's the most mechanically checkable one without needing a model in the loop — pure regex extraction plus set comparison — and because it's the rule that would have caught this project's own worst mistake (see "Evaluating the checker," below).
+**`checker/link_checker.py`** — Rule 3: *"Internal links must resolve, and anchor text must match the destination's real title."* The core module. Picked first because it's the most mechanically checkable rule without needing a model in the loop — pure regex extraction plus set comparison — and because it's the rule that would have caught this project's own worst mistake (see "Evaluating the checker," below).
 
 ```
 python3 checker/link_checker.py
 ```
 
 Reads `scrape/` and `data/`, writes `output/findings.json`, prints a summary to stdout. `output/run_log.md` is a hand-written follow-up looking at specific results, not auto-generated.
+
+**`checker/semantic_drift_checker.py`** — Rule 1: *"A local definition may exist for context, but must not drift from canonical."* A second, smaller, clearly-labeled module built time-permitting — see "Second module," below, for why it's architecturally different from the link checker and what it actually found.
+
+```
+python3 checker/semantic_drift_checker.py
+```
+
+Reads `scrape/`, writes `output/semantic_drift_candidates.json`. `output/semantic_drift_findings.md` has this run's actual verdicts and how they were produced.
 
 ## Why the data pipeline looks the way it does
 
@@ -48,11 +56,25 @@ Each internal link on each scraped page gets exactly one status:
 
 That fix is documented as a deliberate, principled improvement, not a tuning pass aimed at this one sample: the remaining 28 flags were read by hand and mostly turned out to be a *different*, still-real limitation — no stemming, so "submission" and "submitting" don't token-match even though they're the same word. That wasn't patched here on purpose (see `run_log.md`'s Group A/Group B breakdown) — fixing it would have made this run's output cleaner but wouldn't be evidence the fix generalizes, and the assignment specifically asked for real output including checker mistakes rather than a scrubbed sample.
 
+## Second module: Rule 1 semantic-drift checker
+
+`checker/semantic_drift_checker.py` targets Rule 1 instead of Rule 3, and it's a genuinely different kind of checker, not just more of the same code. Rule 3 is pure structural comparison — a link resolves or it doesn't, tokens overlap or they don't. Rule 1 can't work that way: "does this sentence assert a new capability about the canonical primitive" is a semantic question, and Rule 1's own conformance check in `part2-standards.md` says so directly — it calls this "the kind of judgment call Part 3's checker uses Claude for rather than pure regex." So this module is two stages:
+
+- **Stage A (mechanical, fully automated, no network):** finds each surface page's local definition of a primitive — a sentence like "A plugin is..." or "A connection is..." — anywhere on the page, plus a structural length-heuristic flag over the opening summary block.
+- **Stage B (semantic, needs a model in the loop):** compares each local definition against the current canonical definition and returns one of three verdicts — CONSISTENT, DRIFT, or **DISTINCT_CONCEPT**. That third category exists specifically because of what the Part 2 template stress test found: Claude Tag's admin-scoped "connection" is a deliberately different concept from a personal "connector," and a checker with only two buckets (consistent/drift) would have flagged it as drift for the same reason a naive human read of Rule 1 would have — it doesn't match canonical, because it isn't describing canonical in the first place.
+
+**Why Stage B is a real API integration, not a mock.** `call_model()` in the script makes an actual call to `api.anthropic.com` with the literal comparison prompt, and would run unattended with `ANTHROPIC_API_KEY` set. This build environment has network access to that host but no key configured, so Stage B could not run automatically here — the script detects that, writes every extracted candidate and its exact prompt to `output/semantic_drift_candidates.json`, and stops rather than faking a result. `output/semantic_drift_findings.md` has this run's actual Stage B verdicts, produced by applying the same prompt by hand, labeled as exactly that.
+
+**What it found, run against the 9 surface pages:** 8 definitional candidates extracted (4 pages had no local definition to check at all, and correctly produced no verdict rather than a forced one). The headline result is Claude Tag's "connection" sentence correctly coming back DISTINCT_CONCEPT rather than DRIFT — the specific case this module exists to get right. But the same page's "A plugin is a packaged set of skills" sentence, one section later, came back genuine DRIFT (canonical plugins bundle connectors and slash commands and sub-agents too, not just skills) — a real, previously-undocumented instance of Rule 1's pattern. And the Government surface's plugins page produced the most concrete new finding: it defines a plugin as including "hooks," a component that appears nowhere on the canonical `plugins/overview.md` page (confirmed by grep across the whole file, not just the summary) — the same drift pattern Part 1's finding #5 already caught in component *tables*, showing up independently in defining *prose*. Full verdicts, rationale, and two disclosed checker limitations (a too-blunt length heuristic, and a real Stage A extraction bug caught mid-build) are in `output/semantic_drift_findings.md`.
+
 ## Files
 
 - `checker/build_page_index.py` — builds `data/known_pages.json` from `sitemap-urls.txt` + `llms-txt-raw.txt`.
-- `checker/link_checker.py` — the checker itself; run this.
+- `checker/link_checker.py` — Rule 3 checker; run this for link validity.
+- `checker/semantic_drift_checker.py` — Rule 1 checker; run this for definition drift. See "Second module," above.
 - `data/verified_overrides.json` — hand-verified live status for the 5 pages the two indexes disagree on, including the `models` false-404 incident described above.
 - `scrape/` — 50 verbatim page snapshots (WebFetch, literal-content prompts; see the environment-constraint note above).
-- `output/findings.json` — structured output of the last run.
+- `output/findings.json` — structured output of the last `link_checker.py` run.
 - `output/run_log.md` — hand-annotated read-through of that run's actual findings, including which ANCHOR_MISMATCH flags look like real problems vs. checker artifacts.
+- `output/semantic_drift_candidates.json` — Stage A output of `semantic_drift_checker.py`: extracted local definitions and their exact Stage B prompts.
+- `output/semantic_drift_findings.md` — Stage B verdicts for this run, and how they were produced.
