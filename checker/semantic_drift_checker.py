@@ -193,6 +193,22 @@ def extract_full_body(text: str) -> str:
 def split_sentences(block: str) -> list:
     # Simple split, not linguistically exact -- good enough for the length
     # heuristic and for isolating the sentence a definition regex matched.
+    #
+    # Strip trailing markdown line-continuation backslashes ("...research.\"
+    # at end of line, a manual <br/> used across several scraped pages --
+    # e.g. claude-science/enable-claude-science.md) BEFORE collapsing
+    # whitespace, not after. Left in place, a backslash like that survives
+    # whitespace collapse as "research.\ Local connectors...", and the
+    # sentence-boundary split below requires whitespace immediately after
+    # [.!?] -- the backslash sits in that gap, so no split happens there,
+    # silently merging two real sentences into one and hiding whichever
+    # definitional sentence started the second half (this is exactly what
+    # hid "Directory connectors are..." from DEFINITION_RE -- see
+    # output/semantic_drift_findings.md's "What changed in the third
+    # pass"). Only strips a backslash immediately followed by whitespace,
+    # so an escaped markdown character like "\*" or "\_" (backslash
+    # followed by a non-whitespace character) is left alone.
+    block = re.sub(r"\\(\s)", r"\1", block)
     block = re.sub(r"\s+", " ", block).strip()
     if not block:
         return []
