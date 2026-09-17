@@ -1,0 +1,23 @@
+{
+  "_readme": "Manual live-verification for pages where sitemap.xml and llms.txt disagreed. Produced by directly fetching each URL during Part 3 data prep (2026-09-17). The checker consults this file as a fallback ground truth when a link target isn't resolvable from known_pages.json alone -- see checker/link_checker.py. This file exists because building the index (checker/build_page_index.py) surfaced 5 paths that llms.txt lists but sitemap.xml doesn't, and blindly trusting either index would have gotten some of them wrong in each direction.",
+  "/third-party/claude-desktop/models": {
+    "verified_live": true,
+    "evidence": "CORRECTED 2026-09-17: an earlier check here reported a 404 and concluded this was a dead link inside llms.txt itself. That was wrong. The 404 came from WebFetch on the no-suffix URL, twice in a row -- but fetching the exact same page with a literal '.md' suffix returned full real content ('Models and effort levels'), and Megan independently confirmed the page loads fine in her own browser. The likely explanation is a stale WebFetch cache entry (it self-cleans on ~15min) or a tool-specific quirk on that route; the exact mechanism was never pinned down, only that the 404 was false. Live and real, just missing from sitemap.xml, same pattern as the other four entries below. See part1-audit-memo.md's red-team log, 'pass 3' entry, for the full sequence -- this file's original entry is the worked example for why the checker should not treat a single fetch failure as proof of BROKEN."
+  },
+  "/claude-tag/admins/healthcare": {
+    "verified_live": true,
+    "evidence": "WebFetch returned full real content on 2026-09-17 ('Use Claude Tag at a healthcare organization'). Live and real, just missing from sitemap.xml -- sitemap.xml under-indexes here, the mirror image of finding #3."
+  },
+  "/third-party/claude-desktop/connectors-box": {
+    "verified_live": true,
+    "evidence": "WebFetch returned full real content on 2026-09-17 ('Connect to Box'). Live and real, missing from sitemap.xml."
+  },
+  "/third-party/claude-desktop/connectors-google-cloud": {
+    "verified_live": true,
+    "evidence": "WebFetch returned full real content on 2026-09-17 ('Connect to Google Cloud'). Live and real, missing from sitemap.xml."
+  },
+  "/third-party/claude-desktop/mcp-sign-in": {
+    "verified_live": true,
+    "evidence": "WebFetch returned full real content on 2026-09-17 ('Set up sign-in for managed MCP servers'). Live and real, missing from sitemap.xml."
+  }
+}

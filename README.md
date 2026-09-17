@@ -1,0 +1,58 @@
+# Part 3 — Link-validity checker prototype
+
+An automated checker for Part 2's **Rule 3**: *"Internal links must resolve, and anchor text must match the destination's real title."* Run against a real 50-page slice of claude.com/docs (the exact slice Part 1 audited: all Skills and Plugins pages, all 37 Connectors pages, and 9 previously-examined surface pages).
+
+Rule 3 was picked over the other four style-guide rules because it's the most mechanically checkable one without needing a model in the loop — pure regex extraction plus set comparison — and because it's the rule that would have caught this project's own worst mistake (see "Evaluating the checker," below).
+
+```
+python3 checker/link_checker.py
+```
+
+Reads `scrape/` and `data/`, writes `output/findings.json`, prints a summary to stdout. `output/run_log.md` is a hand-written follow-up looking at specific results, not auto-generated.
+
+## Why the data pipeline looks the way it does
+
+**The scrape is WebFetch-based, not a raw crawl — that's an environment constraint, not a design choice.** This sandbox's outbound network policy blocks raw HTTP calls to claude.com; all page content came through the WebFetch tool (via 5 parallel sub-agents, each fetching 10 pages with a literal/verbatim prompt so the content wasn't summarized/lossy). A production version of this checker would run a normal crawler or HTTP client against the live site or a build artifact; the checking logic in `link_checker.py` doesn't care where the markdown came from and would be unchanged.
+
+**Ground truth comes from two independent indexes, not one, because one alone is provably unreliable.** `claude.com/docs/llms.txt` (Anthropic's own curated index for LLM consumers) and `claude.com/docs/sitemap.xml` (a standard, presumably build-generated sitemap) are two separately-produced lists of every page on the site. `checker/build_page_index.py` unions them into `data/known_pages.json`. They mostly agree — for this slice, exactly (37/2/2 for Connectors/Skills/Plugins). Where they don't agree site-wide, trusting either one alone would have been a mistake in a different direction each time, and finding out which one was wrong took a live fetch, not just picking the "more official-sounding" source. That's not a hypothetical: it's exactly what happened while building this checker (next section).
+
+## Evaluating the checker: what happened while building it
+
+This is the assignment's explicit ask — "how would you evaluate the checker itself?" — and the honest answer came from a real incident during this checker's own data prep, not a hypothetical.
+
+Building `data/verified_overrides.json` (the manual live-check for the handful of pages where `llms.txt` and `sitemap.xml` disagree) required re-examining Part 1's finding #3, which had originally claimed `connectors/building/mcpb.md` was a real page missing from `llms.txt`. A clean, literal re-fetch showed that claim was wrong — the page *is* listed. Looking for a replacement piece of evidence, an automated fetch of `third-party/claude-desktop/models` returned a 404, so that got proposed as the new example of an index problem — and that was *also* wrong: the page loads fine (confirmed independently in a human's own browser), and a second fetch of the same URL with a literal `.md` suffix returned full real content. The most likely explanation is a stale cache entry or a tool-specific quirk on that exact route; the precise mechanism was never fully pinned down, only that the automated result was false.
+
+What survived, independently verified by a human opening each page directly rather than trusting any single automated fetch, was narrower and real: `sitemap.xml` (not `llms.txt`) is missing four live pages that `llms.txt` correctly lists. That's the finding that made it into Part 1's memo and into `data/verified_overrides.json`.
+
+**The lesson, and it's a direct, worked answer to the "how do you evaluate this checker" question:** a single automated fetch returning an error is not proof a link is dead. This checker's own data-prep process produced a false positive from exactly that mistake, twice, within the same hour. Concretely, that means:
+
+- **False-positive tolerance and why:** for a BROKEN verdict specifically, the cost of being wrong is asymmetric — a false BROKEN sends someone chasing a link that was never actually dead, and if that happens more than rarely, people stop trusting the tool's BROKEN output at all (the same failure mode this checker's own build process just demonstrated firsthand). A production version of this checker should not report BROKEN off a single fetch; it should retry with backoff and require at least two failures (ideally on different days, to rule out transient outages) before surfacing a page as dead, and should always emit *what* failed (status code, timeout, etc.) so a human isn't re-debugging from scratch. ANCHOR_MISMATCH is a softer signal by design — it's explicitly not "your link is wrong," it's "go look at this" — so it can tolerate a much higher false-positive rate than BROKEN can; `output/run_log.md` shows this run's ANCHOR_MISMATCH bucket is genuinely about half checker artifacts (mostly a missing stemming step — "submission" vs. "submitting" doesn't token-match) and half plausible real findings, and that's an acceptable mix for a signal that's meant to be triaged by a person, not acted on automatically.
+- **How to detect degradation:** track the false-positive rate of each bucket over time by spot-checking a sample of flagged links each run (the way `run_log.md` does here, by hand, for this one run) — if ANCHOR_MISMATCH's real-finding rate drops as the docs site's naming conventions drift from what the similarity heuristic assumes, or if BROKEN's confirmed-real rate drops because of a change in fetch behavior (a redirect policy change, a new auth wall, a CDN quirk), that's the signal to retune the metric or the retry logic — not to keep shipping the same thresholds indefinitely.
+- **What keeps it from going stale:** the ground-truth index (`known_pages.json`) is only as current as the last time `build_page_index.py` ran against live `llms.txt`/`sitemap.xml`; it should run on a schedule (or on every docs deploy) rather than once, and `verified_overrides.json` — the file this whole incident lives in — needs the same discipline: it's hand-verified truth, but "hand-verified on 2026-09-17" has a shelf life, and a page that's confirmed live today isn't guaranteed live in six months. A production checker should re-verify overrides periodically rather than treating a manual confirmation as permanent.
+
+## Classification scheme
+
+Each internal link on each scraped page gets exactly one status:
+
+| Status | Meaning |
+|---|---|
+| `BROKEN` | Target isn't a real page in either index or the verified-overrides fallback. Attaches a "did you mean" suggestion when the anchor text closely resembles another real page's title. |
+| `UNINDEXED` | Target is a real, live page but missing from `llms.txt` — Part 1 finding #3's original pattern, generalized (empty on this run; see `run_log.md`). |
+| `ANCHOR_MISMATCH` | Target resolves and its real title is known, but the anchor text doesn't look like that title. |
+| `UNVERIFIED` | Target resolves but no title is available to compare against (not in `llms.txt`, not one of the 50 scraped pages) — deliberately *not* counted as a pass. A checker that reports "OK" when it actually has no data would be worse than one that says "can't tell." |
+| `OK` | Target resolves and anchor text matches its title. |
+
+## Anchor-title similarity: what it is and why it changed mid-build
+
+`similarity(anchor, title)` is an **overlap coefficient** — `|tokens(anchor) ∩ tokens(title)| / min(|tokens(anchor)|, |tokens(title)|)` — not Jaccard. The first version used Jaccard (over the *union* of tokens) and produced a 35% (57/164) ANCHOR_MISMATCH rate; reading through the flags showed most of them were short, legitimate anchors being penalized purely for being shorter than the real title ("MCP tunnel" linking to a page titled "MCP tunnels overview" scores low under Jaccard for no reason other than the title having an extra word). Switching to overlap coefficient — dividing by the smaller set instead of the union — means a short anchor whose words all appear in the title scores a perfect 1.0, and cut the rate to 17% (28/164).
+
+That fix is documented as a deliberate, principled improvement, not a tuning pass aimed at this one sample: the remaining 28 flags were read by hand and mostly turned out to be a *different*, still-real limitation — no stemming, so "submission" and "submitting" don't token-match even though they're the same word. That wasn't patched here on purpose (see `run_log.md`'s Group A/Group B breakdown) — fixing it would have made this run's output cleaner but wouldn't be evidence the fix generalizes, and the assignment specifically asked for real output including checker mistakes rather than a scrubbed sample.
+
+## Files
+
+- `checker/build_page_index.py` — builds `data/known_pages.json` from `sitemap-urls.txt` + `llms-txt-raw.txt`.
+- `checker/link_checker.py` — the checker itself; run this.
+- `data/verified_overrides.json` — hand-verified live status for the 5 pages the two indexes disagree on, including the `models` false-404 incident described above.
+- `scrape/` — 50 verbatim page snapshots (WebFetch, literal-content prompts; see the environment-constraint note above).
+- `output/findings.json` — structured output of the last run.
+- `output/run_log.md` — hand-annotated read-through of that run's actual findings, including which ANCHOR_MISMATCH flags look like real problems vs. checker artifacts.

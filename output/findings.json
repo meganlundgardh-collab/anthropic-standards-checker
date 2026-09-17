@@ -1,0 +1,1676 @@
+[
+  {
+    "source_page": "/claude-science/enable-claude-science",
+    "anchor_text": "How Claude Science works with your data",
+    "href": "/docs/claude-science/how-claude-science-works-with-your-data",
+    "resolved_target": "/claude-science/how-claude-science-works-with-your-data",
+    "real_title": "How Claude Science works with your data",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-science/overview",
+    "anchor_text": "enable Claude Science for the organization",
+    "href": "/docs/claude-science/enable-claude-science",
+    "resolved_target": "/claude-science/enable-claude-science",
+    "real_title": "Enable Claude Science",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "catch a team up on a channel or thread",
+    "href": "/docs/claude-tag/users/use-cases/catch-up",
+    "resolved_target": "/claude-tag/users/use-cases/catch-up",
+    "real_title": "Catch up",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "triage a request channel",
+    "href": "/docs/claude-tag/users/use-cases/triage-requests",
+    "resolved_target": "/claude-tag/users/use-cases/triage-requests",
+    "real_title": "Triage requests",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "turn a discussion into a doc",
+    "href": "/docs/claude-tag/users/use-cases/create-artifacts",
+    "resolved_target": "/claude-tag/users/use-cases/create-artifacts",
+    "real_title": "Turn threads into docs and tickets",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.33,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'turn a discussion into a doc' doesn't look like the target's real title 'Turn threads into docs and tickets' (token overlap 0.33)."
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "track a project from channel history",
+    "href": "/docs/claude-tag/users/use-cases/track-projects",
+    "resolved_target": "/claude-tag/users/use-cases/track-projects",
+    "real_title": "Track projects and chase approvals",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.25,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'track a project from channel history' doesn't look like the target's real title 'Track projects and chase approvals' (token overlap 0.25)."
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "setup",
+    "href": "/docs/claude-tag/admins/setup-overview",
+    "resolved_target": "/claude-tag/admins/setup-overview",
+    "real_title": "Set up Claude Tag",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'setup' doesn't look like the target's real title 'Set up Claude Tag' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "agent identity",
+    "href": "/docs/claude-tag/concepts/agent-identity",
+    "resolved_target": "/claude-tag/concepts/agent-identity",
+    "real_title": "How agent identity works",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "personal connectors in channels",
+    "href": "/docs/claude-tag/concepts/personal-connectors",
+    "resolved_target": "/claude-tag/concepts/personal-connectors",
+    "real_title": "Personal connectors in channels",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Notion",
+    "href": "/docs/claude-tag/admins/connections/notion",
+    "resolved_target": "/claude-tag/admins/connections/notion",
+    "real_title": "Connect Notion",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Confluence",
+    "href": "/docs/claude-tag/admins/connections/atlassian",
+    "resolved_target": "/claude-tag/admins/connections/atlassian",
+    "real_title": "Connect Jira and Confluence",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "GitLab",
+    "href": "/docs/claude-tag/admins/connections/gitlab",
+    "resolved_target": "/claude-tag/admins/connections/gitlab",
+    "real_title": "Connect GitLab",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Claude GitHub App",
+    "href": "/docs/claude-tag/admins/configure-github",
+    "resolved_target": "/claude-tag/admins/configure-github",
+    "real_title": "Configure GitHub access",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.33,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Claude GitHub App' doesn't look like the target's real title 'Configure GitHub access' (token overlap 0.33)."
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Snowflake",
+    "href": "/docs/claude-tag/admins/connections/snowflake",
+    "resolved_target": "/claude-tag/admins/connections/snowflake",
+    "real_title": "Connect Snowflake",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Sentry",
+    "href": "/docs/claude-tag/admins/connections/sentry",
+    "resolved_target": "/claude-tag/admins/connections/sentry",
+    "real_title": "Connect Sentry",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Datadog",
+    "href": "/docs/claude-tag/admins/connections/datadog",
+    "resolved_target": "/claude-tag/admins/connections/datadog",
+    "real_title": "Connect Datadog",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "PagerDuty",
+    "href": "/docs/claude-tag/admins/connections/pagerduty",
+    "resolved_target": "/claude-tag/admins/connections/pagerduty",
+    "real_title": "Connect PagerDuty",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Linear",
+    "href": "/docs/claude-tag/admins/connections/linear",
+    "resolved_target": "/claude-tag/admins/connections/linear",
+    "real_title": "Connect Linear",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Asana",
+    "href": "/docs/claude-tag/admins/connections/asana",
+    "resolved_target": "/claude-tag/admins/connections/asana",
+    "real_title": "Connect Asana",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Jira",
+    "href": "/docs/claude-tag/admins/connections/atlassian",
+    "resolved_target": "/claude-tag/admins/connections/atlassian",
+    "real_title": "Connect Jira and Confluence",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "HubSpot",
+    "href": "/docs/claude-tag/admins/connections/hubspot",
+    "resolved_target": "/claude-tag/admins/connections/hubspot",
+    "real_title": "Connect HubSpot",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Gong",
+    "href": "/docs/claude-tag/admins/connections/gong",
+    "resolved_target": "/claude-tag/admins/connections/gong",
+    "real_title": "Connect Gong",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Salesforce",
+    "href": "/docs/claude-tag/admins/connections/salesforce",
+    "resolved_target": "/claude-tag/admins/connections/salesforce",
+    "real_title": "Connect Salesforce",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "connection guides",
+    "href": "/docs/claude-tag/admins/connections/overview",
+    "resolved_target": "/claude-tag/admins/connections/overview",
+    "real_title": "Per-service connection guides",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Google Workspace",
+    "href": "/docs/claude-tag/admins/connections/google",
+    "resolved_target": "/claude-tag/admins/connections/google",
+    "real_title": "Connect Google Drive, Calendar, and Gmail",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Custom connection guide",
+    "href": "/docs/claude-tag/admins/connections/custom",
+    "resolved_target": "/claude-tag/admins/connections/custom",
+    "real_title": "Connect a service that isn't in the list",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Custom connection guide' doesn't look like the target's real title \"Connect a service that isn't in the list\" (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Attach bundles to scopes",
+    "href": "/docs/claude-tag/admins/attach-to-scope",
+    "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "real_title": "Configure per-channel access",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Attach bundles to scopes' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "the Google guide",
+    "href": "/docs/claude-tag/admins/connections/google",
+    "resolved_target": "/claude-tag/admins/connections/google",
+    "real_title": "Connect Google Drive, Calendar, and Gmail",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Configure GitHub access",
+    "href": "/docs/claude-tag/admins/configure-github",
+    "resolved_target": "/claude-tag/admins/configure-github",
+    "real_title": "Configure GitHub access",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "skills repository",
+    "href": "/docs/claude-tag/admins/skills-repo",
+    "resolved_target": "/claude-tag/admins/skills-repo",
+    "real_title": "Set up a skills repository Claude can update",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Set a spend limit",
+    "href": "/docs/claude-tag/admins/set-spend-limit",
+    "resolved_target": "/claude-tag/admins/set-spend-limit",
+    "real_title": "Set a spend limit",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/add-connections",
+    "anchor_text": "Configure GitHub access",
+    "href": "/docs/claude-tag/admins/configure-github",
+    "resolved_target": "/claude-tag/admins/configure-github",
+    "real_title": "Configure GitHub access",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Access bundles",
+    "href": "/docs/claude-tag/admins/add-connections",
+    "resolved_target": "/claude-tag/admins/add-connections",
+    "real_title": "Give Claude access to your tools",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "skills repository",
+    "href": "/docs/claude-tag/admins/skills-repo",
+    "resolved_target": "/claude-tag/admins/skills-repo",
+    "real_title": "Set up a skills repository Claude can update",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "telling Claude",
+    "href": "/docs/claude-tag/users/memory",
+    "resolved_target": "/claude-tag/users/memory",
+    "real_title": "What Claude Tag remembers",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Add connections",
+    "href": "/docs/claude-tag/admins/add-connections",
+    "resolved_target": "/claude-tag/admins/add-connections",
+    "real_title": "Give Claude access to your tools",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Add connections' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "personal connectors in channels",
+    "href": "/docs/claude-tag/concepts/personal-connectors",
+    "resolved_target": "/claude-tag/concepts/personal-connectors",
+    "real_title": "Personal connectors in channels",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "add a custom connection",
+    "href": "/docs/claude-tag/admins/connections/custom",
+    "resolved_target": "/claude-tag/admins/connections/custom",
+    "real_title": "Connect a service that isn't in the list",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'add a custom connection' doesn't look like the target's real title \"Connect a service that isn't in the list\" (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Memory",
+    "href": "/docs/claude-tag/users/memory",
+    "resolved_target": "/claude-tag/users/memory",
+    "real_title": "What Claude Tag remembers",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Memory' doesn't look like the target's real title 'What Claude Tag remembers' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Memory",
+    "href": "/docs/claude-tag/users/memory",
+    "resolved_target": "/claude-tag/users/memory",
+    "real_title": "What Claude Tag remembers",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Memory' doesn't look like the target's real title 'What Claude Tag remembers' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Control when Claude Tag responds",
+    "href": "/docs/claude-tag/users/when-claude-responds",
+    "resolved_target": "/claude-tag/users/when-claude-responds",
+    "real_title": "Control when Claude Tag responds",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Set up routines",
+    "href": "/docs/claude-tag/users/proactivity",
+    "resolved_target": "/claude-tag/users/proactivity",
+    "real_title": "Set up routines",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Memory",
+    "href": "/docs/claude-tag/users/memory",
+    "resolved_target": "/claude-tag/users/memory",
+    "real_title": "What Claude Tag remembers",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Memory' doesn't look like the target's real title 'What Claude Tag remembers' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "routines",
+    "href": "/docs/claude-tag/users/proactivity",
+    "resolved_target": "/claude-tag/users/proactivity",
+    "real_title": "Set up routines",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "choose the model Claude Tag uses",
+    "href": "/docs/claude-tag/users/models",
+    "resolved_target": "/claude-tag/users/models",
+    "real_title": "Choose the model Claude Tag uses",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "connection",
+    "href": "/docs/claude-tag/admins/add-connections",
+    "resolved_target": "/claude-tag/admins/add-connections",
+    "real_title": "Give Claude access to your tools",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'connection' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Settings map",
+    "href": "/docs/claude-tag/concepts/settings-map",
+    "resolved_target": "/claude-tag/concepts/settings-map",
+    "real_title": "Claude Tag settings map",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "What Claude Tag remembers",
+    "href": "/docs/claude-tag/users/memory",
+    "resolved_target": "/claude-tag/users/memory",
+    "real_title": "What Claude Tag remembers",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "Good habits for working with Claude Tag",
+    "href": "/docs/claude-tag/users/good-habits",
+    "resolved_target": "/claude-tag/users/good-habits",
+    "real_title": "Good habits for working with Claude Tag",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/admins/customize",
+    "anchor_text": "How agent identity works",
+    "href": "/docs/claude-tag/concepts/agent-identity",
+    "resolved_target": "/claude-tag/concepts/agent-identity",
+    "real_title": "How agent identity works",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "the setup overview",
+    "href": "/docs/claude-tag/admins/setup-overview",
+    "resolved_target": "/claude-tag/admins/setup-overview",
+    "real_title": "Set up Claude Tag",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'the setup overview' doesn't look like the target's real title 'Set up Claude Tag' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "how Claude Tag works",
+    "href": "/docs/claude-tag/concepts/how-it-works",
+    "resolved_target": "/claude-tag/concepts/how-it-works",
+    "real_title": "How Claude Tag works",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "connections",
+    "href": "/docs/claude-tag/admins/add-connections",
+    "resolved_target": "/claude-tag/admins/add-connections",
+    "real_title": "Give Claude access to your tools",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'connections' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "plugins, and skills",
+    "href": "/docs/claude-tag/admins/customize",
+    "resolved_target": "/claude-tag/admins/customize",
+    "real_title": "Customize Claude Tag",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'plugins, and skills' doesn't look like the target's real title 'Customize Claude Tag' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "spend limit",
+    "href": "/docs/claude-tag/admins/set-spend-limit",
+    "resolved_target": "/claude-tag/admins/set-spend-limit",
+    "real_title": "Set a spend limit",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Set a spend limit",
+    "href": "/docs/claude-tag/admins/set-spend-limit",
+    "resolved_target": "/claude-tag/admins/set-spend-limit",
+    "real_title": "Set a spend limit",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Set up Claude Tag",
+    "href": "/docs/claude-tag/admins/setup-overview",
+    "resolved_target": "/claude-tag/admins/setup-overview",
+    "real_title": "Set up Claude Tag",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Watch monitors and alerts",
+    "href": "/docs/claude-tag/users/use-cases/watch-monitors",
+    "resolved_target": "/claude-tag/users/use-cases/watch-monitors",
+    "real_title": "Watch monitors and alerts",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Triage requests",
+    "href": "/docs/claude-tag/users/use-cases/triage-requests",
+    "resolved_target": "/claude-tag/users/use-cases/triage-requests",
+    "real_title": "Triage requests",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Find answers in your docs",
+    "href": "/docs/claude-tag/users/use-cases/find-answers",
+    "resolved_target": "/claude-tag/users/use-cases/find-answers",
+    "real_title": "Find answers in your docs",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Answer data questions",
+    "href": "/docs/claude-tag/users/use-cases/answer-data-questions",
+    "resolved_target": "/claude-tag/users/use-cases/answer-data-questions",
+    "real_title": "Answer data questions",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Track projects and chase approvals",
+    "href": "/docs/claude-tag/users/use-cases/track-projects",
+    "resolved_target": "/claude-tag/users/use-cases/track-projects",
+    "real_title": "Track projects and chase approvals",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Turn threads into docs and tickets",
+    "href": "/docs/claude-tag/users/use-cases/create-artifacts",
+    "resolved_target": "/claude-tag/users/use-cases/create-artifacts",
+    "real_title": "Turn threads into docs and tickets",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Fix bugs",
+    "href": "/docs/claude-tag/users/use-cases/fix-bugs",
+    "resolved_target": "/claude-tag/users/use-cases/fix-bugs",
+    "real_title": "Fix bugs",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Work from your own channel",
+    "href": "/docs/claude-tag/users/use-cases/your-own-channel",
+    "resolved_target": "/claude-tag/users/use-cases/your-own-channel",
+    "real_title": "Work from your own channel",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Get started",
+    "href": "/docs/claude-tag/users/getting-started",
+    "resolved_target": "/claude-tag/users/getting-started",
+    "real_title": "Get started",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/claude-tag/overview",
+    "anchor_text": "Set up Claude Tag",
+    "href": "/docs/claude-tag/admins/setup-overview",
+    "resolved_target": "/claude-tag/admins/setup-overview",
+    "real_title": "Set up Claude Tag",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/after-publishing",
+    "anchor_text": "Managing your listing",
+    "href": "/connectors/building/managing-your-listing",
+    "resolved_target": "/connectors/building/managing-your-listing",
+    "real_title": "Managing your directory listing",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/authentication",
+    "anchor_text": "troubleshooting",
+    "href": "/docs/connectors/building/troubleshooting",
+    "resolved_target": "/connectors/building/troubleshooting",
+    "real_title": "Troubleshooting connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/authentication",
+    "anchor_text": "lazy authentication",
+    "href": "/docs/connectors/building/lazy-authentication",
+    "resolved_target": "/connectors/building/lazy-authentication",
+    "real_title": "Lazy authentication for MCP servers",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/directory-vs-custom",
+    "anchor_text": "External link",
+    "href": "/docs/connectors/building/mcp-apps/external-links",
+    "resolved_target": "/connectors/building/mcp-apps/external-links",
+    "real_title": "Opening external links from MCP Apps",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/directory-vs-custom",
+    "anchor_text": "connector verification",
+    "href": "/docs/connectors/verification",
+    "resolved_target": "/connectors/verification",
+    "real_title": "Connector verification",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/directory-vs-custom",
+    "anchor_text": "directory submission form",
+    "href": "/docs/connectors/building/submission",
+    "resolved_target": "/connectors/building/submission",
+    "real_title": "Submitting to the Connectors Directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.33,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'directory submission form' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.33)."
+  },
+  {
+    "source_page": "/connectors/building",
+    "anchor_text": "authentication reference",
+    "href": "/docs/connectors/building/authentication",
+    "resolved_target": "/connectors/building/authentication",
+    "real_title": "Authentication for connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building",
+    "anchor_text": "what to build",
+    "href": "/docs/connectors/building/what-to-build",
+    "resolved_target": "/connectors/building/what-to-build",
+    "real_title": "What should I build: MCP, plugin, or both?",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/lazy-authentication",
+    "anchor_text": "Enterprise Managed Auth",
+    "href": "/docs/connectors/building/enterprise-managed-auth",
+    "resolved_target": "/connectors/building/enterprise-managed-auth",
+    "real_title": "Enterprise Managed Auth for connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/lazy-authentication",
+    "anchor_text": "Testing your connector",
+    "href": "/docs/connectors/building/testing",
+    "resolved_target": "/connectors/building/testing",
+    "real_title": "Testing your connector",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/managing-your-listing",
+    "anchor_text": "Connectors Directory",
+    "href": "/docs/connectors/directory",
+    "resolved_target": "/connectors/directory",
+    "real_title": "Connectors directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/mcp-apps/external-links",
+    "anchor_text": "Connectors Directory",
+    "href": "/docs/connectors/directory",
+    "resolved_target": "/connectors/directory",
+    "real_title": "Connectors directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/mcp-apps/external-links",
+    "anchor_text": "submit",
+    "href": "/docs/connectors/building/submission",
+    "resolved_target": "/connectors/building/submission",
+    "real_title": "Submitting to the Connectors Directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'submit' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/connectors/building/mcp",
+    "anchor_text": "submit MCP servers",
+    "href": "/docs/connectors/building/submission",
+    "resolved_target": "/connectors/building/submission",
+    "real_title": "Submitting to the Connectors Directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'submit MCP servers' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/connectors/building/mcpb",
+    "anchor_text": "what to build",
+    "href": "/docs/connectors/building/what-to-build",
+    "resolved_target": "/connectors/building/what-to-build",
+    "real_title": "What should I build: MCP, plugin, or both?",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/mcpb",
+    "anchor_text": "submission to the Connectors Directory",
+    "href": "/docs/connectors/building/submission",
+    "resolved_target": "/connectors/building/submission",
+    "real_title": "Submitting to the Connectors Directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.67,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/mcpb",
+    "anchor_text": "building custom connectors",
+    "href": "/docs/connectors/building/index",
+    "resolved_target": "/connectors/building",
+    "real_title": "Building custom connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/mcpb",
+    "anchor_text": "submitting to the directory",
+    "href": "/docs/connectors/building/submission",
+    "resolved_target": "/connectors/building/submission",
+    "real_title": "Submitting to the Connectors Directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/review-criteria",
+    "anchor_text": "community connector",
+    "href": "/docs/connectors/verification",
+    "resolved_target": "/connectors/verification",
+    "real_title": "Connector verification",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/review-criteria",
+    "anchor_text": "custom connector in Claude",
+    "href": "/docs/connectors/building/testing",
+    "resolved_target": "/connectors/building/testing",
+    "real_title": "Testing your connector",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/submission",
+    "anchor_text": "Connectors Directory",
+    "href": "/docs/connectors/directory",
+    "resolved_target": "/connectors/directory",
+    "real_title": "Connectors directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/submission",
+    "anchor_text": "MCP Apps",
+    "href": "/docs/connectors/building/mcp-apps/getting-started",
+    "resolved_target": "/connectors/building/mcp-apps/getting-started",
+    "real_title": "Get started with MCP Apps",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/submission",
+    "anchor_text": "Managing your listing",
+    "href": "/docs/connectors/building/managing-your-listing",
+    "resolved_target": "/connectors/building/managing-your-listing",
+    "real_title": "Managing your directory listing",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/submission",
+    "anchor_text": "pre-submission checklist",
+    "href": "/docs/connectors/building/review-criteria",
+    "resolved_target": "/connectors/building/review-criteria",
+    "real_title": "Pre-submission checklist",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/submission",
+    "anchor_text": "plugin",
+    "href": "/docs/plugins/submit",
+    "resolved_target": "/plugins/submit",
+    "real_title": "Submitting your plugin",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/submission",
+    "anchor_text": "plugins",
+    "href": "/docs/plugins/submit",
+    "resolved_target": "/plugins/submit",
+    "real_title": "Submitting your plugin",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'plugins' doesn't look like the target's real title 'Submitting your plugin' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/connectors/building/submission",
+    "anchor_text": "authentication",
+    "href": "/docs/connectors/building/authentication",
+    "resolved_target": "/connectors/building/authentication",
+    "real_title": "Authentication for connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/submission",
+    "anchor_text": "Managing your listing",
+    "href": "/docs/connectors/building/managing-your-listing",
+    "resolved_target": "/connectors/building/managing-your-listing",
+    "real_title": "Managing your directory listing",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/building/testing",
+    "anchor_text": "troubleshooting connectors",
+    "href": "/docs/connectors/building/troubleshooting",
+    "resolved_target": "/connectors/building/troubleshooting",
+    "real_title": "Troubleshooting connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/custom/remote-mcp",
+    "anchor_text": "Connectors Directory",
+    "href": "/docs/connectors/directory",
+    "resolved_target": "/connectors/directory",
+    "real_title": "Connectors directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/custom/remote-mcp",
+    "anchor_text": "connector verification",
+    "href": "/docs/connectors/verification",
+    "resolved_target": "/connectors/verification",
+    "real_title": "Connector verification",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/custom/remote-mcp",
+    "anchor_text": "Authentication for connectors",
+    "href": "/docs/connectors/building/authentication",
+    "resolved_target": "/connectors/building/authentication",
+    "real_title": "Authentication for connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/directory",
+    "anchor_text": "MCP",
+    "href": "/docs/connectors/building/mcp",
+    "resolved_target": "/connectors/building/mcp",
+    "real_title": "Model Context Protocol (MCP)",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/directory",
+    "anchor_text": "connector verification",
+    "href": "/docs/connectors/verification",
+    "resolved_target": "/connectors/verification",
+    "real_title": "Connector verification",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/directory",
+    "anchor_text": "directory vs custom",
+    "href": "/docs/connectors/building/directory-vs-custom",
+    "resolved_target": "/connectors/building/directory-vs-custom",
+    "real_title": "Directory connectors vs custom connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/directory",
+    "anchor_text": "submission guidelines",
+    "href": "/docs/connectors/building/submission",
+    "resolved_target": "/connectors/building/submission",
+    "real_title": "Submitting to the Connectors Directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'submission guidelines' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/connectors/directory",
+    "anchor_text": "Managing your listing",
+    "href": "/docs/connectors/building/managing-your-listing",
+    "resolved_target": "/connectors/building/managing-your-listing",
+    "real_title": "Managing your directory listing",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/google/calendar",
+    "anchor_text": "Get started with connectors",
+    "href": "/docs/connectors/getting-started",
+    "resolved_target": "/connectors/getting-started",
+    "real_title": "Get started with connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/google/gmail",
+    "anchor_text": "Get started with connectors",
+    "href": "/docs/connectors/getting-started",
+    "resolved_target": "/connectors/getting-started",
+    "real_title": "Get started with connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/mcp-tunnels/overview",
+    "anchor_text": "Model Context Protocol (MCP)",
+    "href": "/docs/connectors/building/mcp",
+    "resolved_target": "/connectors/building/mcp",
+    "real_title": "Model Context Protocol (MCP)",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/mcp-tunnels/overview",
+    "anchor_text": "custom connectors",
+    "href": "/docs/connectors/custom/remote-mcp",
+    "resolved_target": "/connectors/custom/remote-mcp",
+    "real_title": "Third party connectors with remote MCP",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/mcp-tunnels/overview",
+    "anchor_text": "custom connector",
+    "href": "/docs/connectors/custom/remote-mcp",
+    "resolved_target": "/connectors/custom/remote-mcp",
+    "real_title": "Third party connectors with remote MCP",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'custom connector' doesn't look like the target's real title 'Third party connectors with remote MCP' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/connectors/mcp-tunnels/overview",
+    "anchor_text": "Authenticate to MCP servers behind a tunnel",
+    "href": "/docs/connectors/mcp-tunnels/oauth",
+    "resolved_target": "/connectors/mcp-tunnels/oauth",
+    "real_title": "Authenticate to MCP servers behind a tunnel",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/mcp-tunnels/setup",
+    "anchor_text": "MCP tunnels",
+    "href": "/docs/connectors/mcp-tunnels/overview",
+    "resolved_target": "/connectors/mcp-tunnels/overview",
+    "real_title": "MCP tunnels",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/mcp-tunnels/setup",
+    "anchor_text": "Authenticate to MCP servers behind a tunnel",
+    "href": "/docs/connectors/mcp-tunnels/oauth",
+    "resolved_target": "/connectors/mcp-tunnels/oauth",
+    "real_title": "Authenticate to MCP servers behind a tunnel",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/mcp-tunnels/troubleshooting",
+    "anchor_text": "MCP tunnel",
+    "href": "/docs/connectors/mcp-tunnels/overview",
+    "resolved_target": "/connectors/mcp-tunnels/overview",
+    "real_title": "MCP tunnels",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/mcp-tunnels/troubleshooting",
+    "anchor_text": "Authenticate to MCP servers behind a tunnel",
+    "href": "/docs/connectors/mcp-tunnels/oauth",
+    "resolved_target": "/connectors/mcp-tunnels/oauth",
+    "real_title": "Authenticate to MCP servers behind a tunnel",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "Model Context Protocol (MCP)",
+    "href": "/docs/connectors/building/mcp",
+    "resolved_target": "/connectors/building/mcp",
+    "real_title": "Model Context Protocol (MCP)",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "MCP Apps",
+    "href": "/docs/connectors/building/mcp-apps/getting-started",
+    "resolved_target": "/connectors/building/mcp-apps/getting-started",
+    "real_title": "Get started with MCP Apps",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "what to build",
+    "href": "/docs/connectors/building/what-to-build",
+    "resolved_target": "/connectors/building/what-to-build",
+    "real_title": "What should I build: MCP, plugin, or both?",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "Getting started",
+    "href": "/docs/connectors/getting-started",
+    "resolved_target": "/connectors/getting-started",
+    "real_title": "Get started with connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "Remote MCP servers",
+    "href": "/docs/connectors/custom/remote-mcp",
+    "resolved_target": "/connectors/custom/remote-mcp",
+    "real_title": "Third party connectors with remote MCP",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.67,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "MCP Apps",
+    "href": "/docs/connectors/building/mcp-apps/getting-started",
+    "resolved_target": "/connectors/building/mcp-apps/getting-started",
+    "real_title": "Get started with MCP Apps",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "design guidelines",
+    "href": "/docs/connectors/building/mcp-apps/design-guidelines",
+    "resolved_target": "/connectors/building/mcp-apps/design-guidelines",
+    "real_title": "Design guidelines",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "cross-platform compatibility",
+    "href": "/docs/connectors/building/mcp-apps/cross-compatibility",
+    "resolved_target": "/connectors/building/mcp-apps/cross-compatibility",
+    "real_title": "Building cross-platform MCP Apps",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.67,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "MCP Bundles (MCPB)",
+    "href": "/docs/connectors/custom/desktop-extensions",
+    "resolved_target": "/connectors/custom/desktop-extensions",
+    "real_title": "Desktop extensions",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'MCP Bundles (MCPB)' doesn't look like the target's real title 'Desktop extensions' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "MCPB",
+    "href": "/docs/connectors/building/mcpb",
+    "resolved_target": "/connectors/building/mcpb",
+    "real_title": "Build a desktop extension with MCPB",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "plugin",
+    "href": "/docs/plugins/overview",
+    "resolved_target": "/plugins/overview",
+    "real_title": "Plugins overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'plugin' doesn't look like the target's real title 'Plugins overview' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "plugin directory",
+    "href": "/docs/plugins/submit",
+    "resolved_target": "/plugins/submit",
+    "real_title": "Submitting your plugin",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "Connectors Directory",
+    "href": "/docs/connectors/directory",
+    "resolved_target": "/connectors/directory",
+    "real_title": "Connectors directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "connector verification",
+    "href": "/docs/connectors/verification",
+    "resolved_target": "/connectors/verification",
+    "real_title": "Connector verification",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "Third-party Connectors",
+    "href": "/docs/connectors/custom/remote-mcp",
+    "resolved_target": "/connectors/custom/remote-mcp",
+    "real_title": "Third party connectors with remote MCP",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "Desktop Extensions",
+    "href": "/docs/connectors/custom/desktop-extensions",
+    "resolved_target": "/connectors/custom/desktop-extensions",
+    "real_title": "Desktop extensions",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "Plugins",
+    "href": "/docs/plugins/overview",
+    "resolved_target": "/plugins/overview",
+    "real_title": "Plugins overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "Skills",
+    "href": "/docs/skills/overview",
+    "resolved_target": "/skills/overview",
+    "real_title": "Skills overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/overview",
+    "anchor_text": "submit your plugin",
+    "href": "/docs/plugins/submit",
+    "resolved_target": "/plugins/submit",
+    "real_title": "Submitting your plugin",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/slack",
+    "anchor_text": "Claude Tag",
+    "href": "/docs/claude-tag/overview",
+    "resolved_target": "/claude-tag/overview",
+    "real_title": "Work with Claude Tag",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/slack",
+    "anchor_text": "Migrate from the earlier Claude in Slack",
+    "href": "/docs/claude-tag/admins/migrate-from-earlier",
+    "resolved_target": "/claude-tag/admins/migrate-from-earlier",
+    "real_title": "Migrate from the earlier Claude in Slack",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/verification",
+    "anchor_text": "Connectors Directory",
+    "href": "/docs/connectors/directory",
+    "resolved_target": "/connectors/directory",
+    "real_title": "Connectors directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/verification",
+    "anchor_text": "custom connectors",
+    "href": "/docs/connectors/custom/remote-mcp",
+    "resolved_target": "/connectors/custom/remote-mcp",
+    "real_title": "Third party connectors with remote MCP",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/verification",
+    "anchor_text": "directory vs custom",
+    "href": "/docs/connectors/building/directory-vs-custom",
+    "resolved_target": "/connectors/building/directory-vs-custom",
+    "real_title": "Directory connectors vs custom connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/connectors/verification",
+    "anchor_text": "review criteria",
+    "href": "/docs/connectors/building/review-criteria",
+    "resolved_target": "/connectors/building/review-criteria",
+    "real_title": "Pre-submission checklist",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'review criteria' doesn't look like the target's real title 'Pre-submission checklist' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/connectors/verification",
+    "anchor_text": "submission guidelines",
+    "href": "/docs/connectors/building/submission",
+    "resolved_target": "/connectors/building/submission",
+    "real_title": "Submitting to the Connectors Directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'submission guidelines' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/cowork/guide/plugins",
+    "anchor_text": "MCP, plugins, skills, and hooks",
+    "href": "/docs/cowork/3p/extensions",
+    "resolved_target": "/cowork/3p/extensions",
+    "status": "BROKEN",
+    "reason": "Target path not found in sitemap.xml, llms.txt, or verified_overrides.json.",
+    "did_you_mean": {
+      "title": "MCP, plugins, skills, and hooks",
+      "path": "/third-party/claude-desktop/extensions"
+    }
+  },
+  {
+    "source_page": "/cowork/guide/plugins",
+    "anchor_text": "MCP, plugins, skills, and hooks",
+    "href": "/docs/cowork/3p/extensions",
+    "resolved_target": "/cowork/3p/extensions",
+    "status": "BROKEN",
+    "reason": "Target path not found in sitemap.xml, llms.txt, or verified_overrides.json.",
+    "did_you_mean": {
+      "title": "MCP, plugins, skills, and hooks",
+      "path": "/third-party/claude-desktop/extensions"
+    }
+  },
+  {
+    "source_page": "/cowork/guide/plugins",
+    "anchor_text": "Plugins overview",
+    "href": "/docs/plugins/overview",
+    "resolved_target": "/plugins/overview",
+    "real_title": "Plugins overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/cowork/guide/plugins",
+    "anchor_text": "Submit a plugin",
+    "href": "/docs/plugins/submit",
+    "resolved_target": "/plugins/submit",
+    "real_title": "Submitting your plugin",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/cowork/guide/plugins",
+    "anchor_text": "MCP, plugins, skills, and hooks",
+    "href": "/docs/cowork/3p/extensions",
+    "resolved_target": "/cowork/3p/extensions",
+    "status": "BROKEN",
+    "reason": "Target path not found in sitemap.xml, llms.txt, or verified_overrides.json.",
+    "did_you_mean": {
+      "title": "MCP, plugins, skills, and hooks",
+      "path": "/third-party/claude-desktop/extensions"
+    }
+  },
+  {
+    "source_page": "/government/desktop/plugins",
+    "anchor_text": "Plugins overview",
+    "href": "/docs/plugins/overview",
+    "resolved_target": "/plugins/overview",
+    "real_title": "Plugins overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/government/desktop/plugins",
+    "anchor_text": "MCP server",
+    "href": "/docs/connectors/overview",
+    "resolved_target": "/connectors/overview",
+    "real_title": "Connectors overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'MCP server' doesn't look like the target's real title 'Connectors overview' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/government/desktop/skills",
+    "anchor_text": "Skills overview",
+    "href": "/docs/skills/overview",
+    "resolved_target": "/skills/overview",
+    "real_title": "Skills overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/government/desktop/skills",
+    "anchor_text": "Plugins in Claude Desktop",
+    "href": "/docs/government/desktop/plugins",
+    "resolved_target": "/government/desktop/plugins",
+    "real_title": "Plugins in Claude Desktop",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/government/desktop/skills",
+    "anchor_text": "skill authoring guide",
+    "href": "/docs/skills/how-to",
+    "resolved_target": "/skills/how-to",
+    "real_title": "Creating custom skills",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'skill authoring guide' doesn't look like the target's real title 'Creating custom skills' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/government/desktop/skills",
+    "anchor_text": "Manage plugins and connectors",
+    "href": "/docs/government/config/plugins-and-connectors",
+    "resolved_target": "/government/config/plugins-and-connectors",
+    "real_title": "Manage plugins and connectors",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/government/desktop/skills",
+    "anchor_text": "skill authoring guide",
+    "href": "/docs/skills/how-to",
+    "resolved_target": "/skills/how-to",
+    "real_title": "Creating custom skills",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'skill authoring guide' doesn't look like the target's real title 'Creating custom skills' (token overlap 0.00)."
+  },
+  {
+    "source_page": "/office-agents/connectors-and-skills",
+    "anchor_text": "Use Claude for M365 with third-party platforms",
+    "href": "/docs/office-agents/third-party-platforms",
+    "resolved_target": "/office-agents/third-party-platforms",
+    "real_title": "Use Claude for M365 with third-party platforms",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/office-agents/connectors-and-skills",
+    "anchor_text": "Use Claude for Excel",
+    "href": "/docs/office-agents/excel",
+    "resolved_target": "/office-agents/excel",
+    "real_title": "Use Claude for Excel",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/office-agents/connectors-and-skills",
+    "anchor_text": "Use Claude for PowerPoint",
+    "href": "/docs/office-agents/powerpoint",
+    "resolved_target": "/office-agents/powerpoint",
+    "real_title": "Use Claude for PowerPoint",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/office-agents/connectors-and-skills",
+    "anchor_text": "Use Claude for Word",
+    "href": "/docs/office-agents/word",
+    "resolved_target": "/office-agents/word",
+    "real_title": "Use Claude for Word",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/office-agents/connectors-and-skills",
+    "anchor_text": "Use Claude for Outlook",
+    "href": "/docs/office-agents/outlook",
+    "resolved_target": "/office-agents/outlook",
+    "real_title": "Use Claude for Outlook",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/plugins/overview",
+    "anchor_text": "MCP connectors",
+    "href": "/docs/connectors/overview",
+    "resolved_target": "/connectors/overview",
+    "real_title": "Connectors overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
+  },
+  {
+    "source_page": "/plugins/overview",
+    "anchor_text": "skills",
+    "href": "/docs/skills/overview",
+    "resolved_target": "/skills/overview",
+    "real_title": "Skills overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/plugins/submit",
+    "anchor_text": "Connectors Directory",
+    "href": "/docs/connectors/directory",
+    "resolved_target": "/connectors/directory",
+    "real_title": "Connectors directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/plugins/submit",
+    "anchor_text": "Connectors Directory",
+    "href": "/docs/connectors/directory",
+    "resolved_target": "/connectors/directory",
+    "real_title": "Connectors directory",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/skills/overview",
+    "anchor_text": "Plugins",
+    "href": "/docs/plugins/overview",
+    "resolved_target": "/plugins/overview",
+    "real_title": "Plugins overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/skills/overview",
+    "anchor_text": "Creating custom skills",
+    "href": "/docs/skills/how-to",
+    "resolved_target": "/skills/how-to",
+    "real_title": "Creating custom skills",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  },
+  {
+    "source_page": "/skills/overview",
+    "anchor_text": "plugins",
+    "href": "/docs/plugins/overview",
+    "resolved_target": "/plugins/overview",
+    "real_title": "Plugins overview",
+    "real_title_source": "llms.txt",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
+  }
+]

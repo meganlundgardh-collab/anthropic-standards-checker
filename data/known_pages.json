@@ -1,0 +1,1661 @@
+{
+  "/": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Welcome",
+    "llms_txt_raw_url": "https://claude.com/docs/index.md",
+    "llms_txt_used_index_suffix": true
+  },
+  "/claude-science/admin-controls": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Admin controls",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/admin-controls.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/artifacts": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Artifacts",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/artifacts.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/changelog": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Claude Science changelog",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/changelog.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/cloud-storage": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Cloud storage",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/cloud-storage.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/command-line-settings": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Command line settings",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/command-line-settings.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/comments": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Comments",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/comments.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/compute-providers": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Compute providers",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/compute-providers.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/configuration-file-reference": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Configuration file reference",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/configuration-file-reference.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/connectors-and-skills": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connectors and skills",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/connectors-and-skills.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/core-concepts": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Core concepts",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/core-concepts.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/corporate-networks": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use Claude Science on a corporate network",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/corporate-networks.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/custom-connectors": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Custom connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/custom-connectors.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/enable-claude-science": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Enable Claude Science",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/enable-claude-science.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/get-started": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Get started",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/get-started.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/glossary": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Glossary",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/glossary.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/how-claude-science-works-with-your-data": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "How Claude Science works with your data",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/how-claude-science-works-with-your-data.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/legal-and-compliance": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Legal and compliance",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/legal-and-compliance.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/literature-access": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Literature access",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/literature-access.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/manage-on-devices": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Manage Claude Science on devices",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/manage-on-devices.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/monitor-usage": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Monitor Claude Science usage",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/monitor-usage.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/multiple-computers": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use Claude Science on more than one computer",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/multiple-computers.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/network-requirements": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Network requirements",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/network-requirements.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Claude Science",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/remote-compute-clusters": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Remote compute clusters",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/remote-compute-clusters.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/run-on-remote-linux-server": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Run on a remote Linux server",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/run-on-remote-linux-server.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/the-reviewer": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "The reviewer",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/the-reviewer.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-science/tools-and-environments": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Tools and environments",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-science/tools-and-environments.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/add-connections": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Give Claude access to your tools",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/add-connections.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/attach-to-scope": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Configure per-channel access",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/attach-to-scope.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/attribute-costs": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Attribute costs to users",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/attribute-costs.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/audit": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Review what Claude Tag has done",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/audit.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/configure-github": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Configure GitHub access",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/configure-github.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/configure-gitlab": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Configure GitLab access",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/configure-gitlab.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/asana": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Asana",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/asana.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/atlassian": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Jira and Confluence",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/atlassian.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/bigquery": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect BigQuery",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/bigquery.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/custom": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect a service that isn't in the list",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/custom.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/datadog": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Datadog",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/datadog.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/gitlab": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect GitLab",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/gitlab.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/gong": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Gong",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/gong.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/google": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Google Drive, Calendar, and Gmail",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/google.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/hubspot": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect HubSpot",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/hubspot.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/linear": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Linear",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/linear.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/notion": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Notion",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/notion.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Per-service connection guides",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/pagerduty": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect PagerDuty",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/pagerduty.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/salesforce": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Salesforce",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/salesforce.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/sentry": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Sentry",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/sentry.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/snowflake": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Snowflake",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/snowflake.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/stripe": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Stripe",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/stripe.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/connections/vercel": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Vercel",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/connections/vercel.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/customize": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Customize Claude Tag",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/customize.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/federated-access/authorization-server": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect an authorization server",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/federated-access/authorization-server.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/federated-access/aws": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect an AWS role",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/federated-access/aws.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/federated-access/connect-a-gateway": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect a gateway",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/federated-access/connect-a-gateway.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/federated-access/gcp": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect a Google Cloud identity",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/federated-access/gcp.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/federated-access/limits": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Limits for federated cloud access",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/federated-access/limits.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/federated-access/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Federated cloud access",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/federated-access/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/federated-access/token-reference": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Identity token reference",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/federated-access/token-reference.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/federated-access/troubleshooting": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Troubleshoot federated cloud access",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/federated-access/troubleshooting.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/for-slack-admins": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "What the Claude Slack app can access",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/for-slack-admins.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/healthcare": {
+    "in_llms_txt": true,
+    "in_sitemap": false,
+    "llms_title": "Use Claude Tag at a healthcare organization",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/healthcare.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/migrate-from-earlier": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Migrate from the earlier Claude in Slack",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/migrate-from-earlier.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/network-requirements": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Network requirements",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/network-requirements.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/restrict-access": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Restrict where Claude Tag operates",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/restrict-access.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/set-spend-limit": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Set a spend limit",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/set-spend-limit.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/setup-overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Set up Claude Tag",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/setup-overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/skills-repo": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Set up a skills repository Claude can update",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/skills-repo.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/troubleshooting": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Troubleshoot Claude Tag setup",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/troubleshooting.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/admins/workspaces": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Manage workspaces and versions",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/admins/workspaces.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/concepts/agent-identity": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "How agent identity works",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/concepts/agent-identity.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/concepts/data-lifecycle": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Data lifecycle and deletion",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/concepts/data-lifecycle.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/concepts/for-claude-code-users": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Claude Tag for Claude Code users",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/concepts/for-claude-code-users.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/concepts/glossary": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Glossary",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/concepts/glossary.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/concepts/how-it-works": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "How Claude Tag works",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/concepts/how-it-works.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/concepts/personal-connectors": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Personal connectors in channels",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/concepts/personal-connectors.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/concepts/security-and-data": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Security and data handling",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/concepts/security-and-data.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/concepts/settings-map": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Claude Tag settings map",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/concepts/settings-map.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Work with Claude Tag",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/commands": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Commands Claude Tag understands",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/commands.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/getting-started": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Get started",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/getting-started.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/good-habits": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Good habits for working with Claude Tag",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/good-habits.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/memory": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "What Claude Tag remembers",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/memory.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/models": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Choose the model Claude Tag uses",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/models.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/proactivity": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Set up routines",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/proactivity.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/prompt-library": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Prompt library",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/prompt-library.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/troubleshooting": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Troubleshoot Claude Tag in channels and DMs",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/troubleshooting.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use case library",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/answer-data-questions": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Answer data questions",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/answer-data-questions.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/catch-up": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Catch up",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/catch-up.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/create-artifacts": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Turn threads into docs and tickets",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/create-artifacts.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/find-answers": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Find answers in your docs",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/find-answers.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/fix-bugs": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Fix bugs",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/fix-bugs.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/marketing-team": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Claude Tag for marketing teams",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/marketing-team.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/pull-deal-state": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Pull deal and account state",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/pull-deal-state.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/review-documents": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Review documents against a checklist",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/review-documents.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/track-projects": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Track projects and chase approvals",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/track-projects.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/triage-requests": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Triage requests",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/triage-requests.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/watch-monitors": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Watch monitors and alerts",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/watch-monitors.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/work-with-github": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Work with your GitHub repositories",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/work-with-github.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/use-cases/your-own-channel": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Work from your own channel",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/use-cases/your-own-channel.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/claude-tag/users/when-claude-responds": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Control when Claude Tag responds",
+    "llms_txt_raw_url": "https://claude.com/docs/claude-tag/users/when-claude-responds.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Building custom connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/index.md",
+    "llms_txt_used_index_suffix": true
+  },
+  "/connectors/building/after-publishing": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Manage your listing after publishing",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/after-publishing.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/authentication": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Authentication for connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/authentication.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/directory-vs-custom": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Directory connectors vs custom connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/directory-vs-custom.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/enterprise-managed-auth": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Enterprise Managed Auth for connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/enterprise-managed-auth.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/lazy-authentication": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Lazy authentication for MCP servers",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/lazy-authentication.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/managing-your-listing": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Managing your directory listing",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/managing-your-listing.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcp": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Model Context Protocol (MCP)",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcp.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcp-apps/cross-compatibility": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Building cross-platform MCP Apps",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcp-apps/cross-compatibility.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcp-apps/design-guidelines": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Design guidelines",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcp-apps/design-guidelines.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcp-apps/external-links": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Opening external links from MCP Apps",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcp-apps/external-links.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcp-apps/getting-started": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Get started with MCP Apps",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcp-apps/getting-started.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcp-apps/instance-supersession": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Supersede older widget instances",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcp-apps/instance-supersession.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcp-apps/transparent-theming": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Blend your MCP App with Claude's theme",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcp-apps/transparent-theming.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcp-apps/troubleshooting": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Troubleshooting MCP Apps",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcp-apps/troubleshooting.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/mcpb": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Build a desktop extension with MCPB",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/mcpb.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/review-criteria": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Pre-submission checklist",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/review-criteria.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/submission": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Submitting to the Connectors Directory",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/submission.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/testing": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Testing your connector",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/testing.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/troubleshooting": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Troubleshooting connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/troubleshooting.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/building/what-to-build": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "What should I build: MCP, plugin, or both?",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/building/what-to-build.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/custom/desktop-extensions": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Desktop extensions",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/custom/desktop-extensions.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/custom/remote-mcp": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Third party connectors with remote MCP",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/custom/remote-mcp.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/directory": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connectors directory",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/directory.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/getting-started": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Get started with connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/getting-started.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/github": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "GitHub integration",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/github/index.md",
+    "llms_txt_used_index_suffix": true
+  },
+  "/connectors/google/calendar": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Google Calendar integration",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/google/calendar.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/google/drive": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Google Drive integration",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/google/drive.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/google/gmail": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Gmail integration",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/google/gmail.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/mcp-tunnels/oauth": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Authenticate to MCP servers behind a tunnel",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/mcp-tunnels/oauth.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/mcp-tunnels/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "MCP tunnels",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/mcp-tunnels/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/mcp-tunnels/setup": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Set up an MCP tunnel",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/mcp-tunnels/setup.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/mcp-tunnels/troubleshooting": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Troubleshoot MCP tunnels",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/mcp-tunnels/troubleshooting.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/microsoft/365": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Microsoft 365 connector",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/microsoft/365.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connectors overview",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/connectors/slack": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Slack integration",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/slack/index.md",
+    "llms_txt_used_index_suffix": true
+  },
+  "/connectors/verification": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connector verification",
+    "llms_txt_raw_url": "https://claude.com/docs/connectors/verification.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/cowork/changelog": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Changelog",
+    "llms_txt_raw_url": "https://claude.com/docs/cowork/changelog.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/cowork/guide/dispatch": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Run tasks in the background with Dispatch",
+    "llms_txt_raw_url": "https://claude.com/docs/cowork/guide/dispatch.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/cowork/guide/plugins": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Install plugins",
+    "llms_txt_raw_url": "https://claude.com/docs/cowork/guide/plugins.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/cowork/guide/projects": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Organize work with projects",
+    "llms_txt_raw_url": "https://claude.com/docs/cowork/guide/projects.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/cowork/monitoring": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Monitoring",
+    "llms_txt_raw_url": "https://claude.com/docs/cowork/monitoring.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/cowork/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Overview",
+    "llms_txt_raw_url": "https://claude.com/docs/cowork/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/account/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Your account",
+    "llms_txt_raw_url": "https://claude.com/docs/government/account/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/account/profile": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Account",
+    "llms_txt_raw_url": "https://claude.com/docs/government/account/profile.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/account/sessions": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Sessions",
+    "llms_txt_raw_url": "https://claude.com/docs/government/account/sessions.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/account/usage": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Usage",
+    "llms_txt_raw_url": "https://claude.com/docs/government/account/usage.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/changelog": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Claude for Government changelog",
+    "llms_txt_raw_url": "https://claude.com/docs/government/changelog.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/config/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "How Config works",
+    "llms_txt_raw_url": "https://claude.com/docs/government/config/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/config/plugins-and-connectors": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Manage plugins and connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/government/config/plugins-and-connectors.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/config/settings": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Available settings",
+    "llms_txt_raw_url": "https://claude.com/docs/government/config/settings.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/connectors/microsoft-365": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Set up the Microsoft 365 connector",
+    "llms_txt_raw_url": "https://claude.com/docs/government/connectors/microsoft-365.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/connectors/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/government/connectors/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/deploy-desktop/configure": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect Claude Desktop to Claude for Government",
+    "llms_txt_raw_url": "https://claude.com/docs/government/deploy-desktop/configure.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/deploy-desktop/windows-checklist": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Windows fleet checklist",
+    "llms_txt_raw_url": "https://claude.com/docs/government/deploy-desktop/windows-checklist.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/desktop/import": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Import your data from Claude for Government Web",
+    "llms_txt_raw_url": "https://claude.com/docs/government/desktop/import.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/desktop/models": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Models in Claude Desktop",
+    "llms_txt_raw_url": "https://claude.com/docs/government/desktop/models.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/desktop/plugins": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Plugins in Claude Desktop",
+    "llms_txt_raw_url": "https://claude.com/docs/government/desktop/plugins.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/desktop/skills": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Skills in Claude Desktop",
+    "llms_txt_raw_url": "https://claude.com/docs/government/desktop/skills.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/analytics": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Analytics",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/analytics.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/billing": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Billing",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/billing.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/compliance-api": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Compliance API",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/compliance-api.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/configuration": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Config at the organization level",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/configuration.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Organization administration",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/provisioning": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Group mappings",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/provisioning.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/readiness": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Readiness",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/readiness.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/seat-tiers": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Seat tiers",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/seat-tiers.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/seats": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Seats",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/seats.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/setup-wizard": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Setup wizard",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/setup-wizard.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/org-admin/users": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Users",
+    "llms_txt_raw_url": "https://claude.com/docs/government/org-admin/users.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Claude for Government administrator guide",
+    "llms_txt_raw_url": "https://claude.com/docs/government/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/security/security-and-data-handling": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Security and data handling",
+    "llms_txt_raw_url": "https://claude.com/docs/government/security/security-and-data-handling.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/admins": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Admins",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/admins.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/configuration": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Config at the tenant level",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/configuration.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/credits": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Billing",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/credits.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/identity-and-access": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Identity and access",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/identity-and-access.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/organizations": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Organizations",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/organizations.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Tenant administration",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/readiness": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Readiness",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/readiness.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/seats": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Seats",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/seats.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/setup-wizard": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Tenant setup wizard",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/setup-wizard.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/government/tenant-admin/tenant-restrictions": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Tenant restrictions",
+    "llms_txt_raw_url": "https://claude.com/docs/government/tenant-admin/tenant-restrictions.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/connectors-and-skills": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connectors and Skills",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/connectors-and-skills.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/data-storage": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Data storage and retention",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/data-storage.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/dictation": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use dictation in Claude for M365",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/dictation.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/enterprise-readiness": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Security, admin auditability, and analytics",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/enterprise-readiness.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/excel": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use Claude for Excel",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/excel.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/fsi-plugins": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Install financial services plugins for Cowork",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/fsi-plugins.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/opentelemetry": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Configure a custom OpenTelemetry collector",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/opentelemetry.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/outlook": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use Claude for Outlook",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/outlook.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Claude for M365 overview",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/powerpoint": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use Claude for PowerPoint",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/powerpoint.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/third-party-platforms": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use Claude for M365 with third-party platforms",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/third-party-platforms.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/word": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Use Claude for Word",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/word.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/office-agents/work-across-apps": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Work across M365 apps",
+    "llms_txt_raw_url": "https://claude.com/docs/office-agents/work-across-apps.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/plugins/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Plugins overview",
+    "llms_txt_raw_url": "https://claude.com/docs/plugins/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/plugins/submit": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Submitting your plugin",
+    "llms_txt_raw_url": "https://claude.com/docs/plugins/submit.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/skills/how-to": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Creating custom skills",
+    "llms_txt_raw_url": "https://claude.com/docs/skills/how-to.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/skills/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Skills overview",
+    "llms_txt_raw_url": "https://claude.com/docs/skills/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/admin-console": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy with Enterprise Admin Console",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/admin-console.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/bedrock": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy Claude Desktop on 3P with Amazon Bedrock",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/bedrock.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/bootstrap": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy with a bootstrap server",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/bootstrap.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/built-in-connectors": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Built-in connectors",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/built-in-connectors.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/chat": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Chat in Claude Desktop on 3P",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/chat.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/claude-api": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy Claude Desktop on 3P with the Claude API",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/claude-api.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/code": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Code in Claude Desktop on 3P",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/code.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/configuration": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Configuration reference",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/configuration.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/configuration-changelog": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Configuration changelog",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/configuration-changelog.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/connectors-box": {
+    "in_llms_txt": true,
+    "in_sitemap": false,
+    "llms_title": "Connect to Box",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/connectors-box.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/connectors-github": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect to GitHub",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/connectors-github.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/connectors-google-cloud": {
+    "in_llms_txt": true,
+    "in_sitemap": false,
+    "llms_title": "Connect to Google Cloud",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/connectors-google-cloud.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/connectors-m365": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Connect to Microsoft 365",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/connectors-m365.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/credential-helper": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Write a credential helper",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/credential-helper.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/data-storage": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "User identity and local data",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/data-storage.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/entra-broker": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Sign in through the OS identity broker",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/entra-broker.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/extensions": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "MCP, plugins, skills, and hooks",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/extensions.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/feature-matrix": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Features",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/feature-matrix.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/foundry": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy Claude Desktop on 3P with Microsoft Foundry",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/foundry.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/gateway": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy Claude Desktop on 3P with an LLM gateway",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/gateway.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/import": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Import history from claude.ai",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/import.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/in-app-configuration": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "In-app configuration",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/in-app-configuration.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/installation": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Installation and setup",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/installation.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/legal": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Legal and compliance",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/legal.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/local-access": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Desktop and filesystem access",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/local-access.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/mantle": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy Claude Desktop on 3P with Amazon Bedrock Mantle",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/mantle.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/mcp-sign-in": {
+    "in_llms_txt": true,
+    "in_sitemap": false,
+    "llms_title": "Set up sign-in for managed MCP servers",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/mcp-sign-in.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/mdm": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy with MDM",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/mdm.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/models": {
+    "in_llms_txt": true,
+    "in_sitemap": false,
+    "llms_title": "Models and effort levels",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/models.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/network-proxy": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Network proxy",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/network-proxy.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/overview": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Overview",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/overview.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/ssh-remote-sessions": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "SSH remote sessions in Claude Desktop on 3P",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/telemetry": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Telemetry and egress",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/telemetry.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/vertex": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Deploy Claude Desktop on 3P with Google Cloud's Agent Platform",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/vertex.md",
+    "llms_txt_used_index_suffix": false
+  },
+  "/third-party/claude-desktop/web-tools": {
+    "in_llms_txt": true,
+    "in_sitemap": true,
+    "llms_title": "Web search and web fetch",
+    "llms_txt_raw_url": "https://claude.com/docs/third-party/claude-desktop/web-tools.md",
+    "llms_txt_used_index_suffix": false
+  }
+}
