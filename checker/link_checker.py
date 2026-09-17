@@ -61,12 +61,21 @@ STOPWORDS = {
 }
 
 LINK_RE = re.compile(
-    r'(?<!!)\[([^\]]+)\]\((/(?!/)[^)\s#]*|https://claude\.com/docs[^)\s#]*)\)'
+    r'(?<!!)\[([^\]]+)\]\((/(?!/)[^)\s]*|https://claude\.com/docs[^)\s]*)\)'
 )
 
 
 def normalize(url_or_path: str) -> str:
-    path = urlparse(url_or_path).path if url_or_path.startswith("http") else url_or_path
+    # urlparse strips the fragment (and, for an absolute URL, everything but
+    # the path) regardless of whether url_or_path is relative or absolute --
+    # it doesn't require a scheme to do this correctly. The previous version
+    # only called urlparse() when the string started with "http", so a
+    # relative link with a #fragment (the common case: internal docs links
+    # into glossary/concepts pages) passed through with the fragment still
+    # attached, and could never match a fragment-less key in
+    # known_pages.json. See run_log.md for the bug this caused and its
+    # magnitude.
+    path = urlparse(url_or_path).path
     path = re.sub(r"^/docs", "", path)
     path = re.sub(r"\.md$", "", path)
     path = path.rstrip("/")
