@@ -74,7 +74,17 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 SCRAPE = ROOT / "scrape"
 OUTPUT = ROOT / "output"
-MODEL_ID = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
+# The fallback here is the model this script was originally hardcoded to
+# ("claude-sonnet-4-5") -- kept as the default only because it's the one
+# actually verified against this prompt while building the checker, not
+# because it's expected to stay valid indefinitely. It won't: Sonnet 4.5 is
+# scheduled for deprecation on 9/29. The fix for that isn't a smarter default
+# (there's no string that stays valid forever, so guessing a newer-sounding
+# one -- e.g. a "4-6" that was never a real released model ID -- just trades
+# one eventual 404 for a sooner, less predictable one); it's ANTHROPIC_MODEL
+# being overridable at all. Anyone running Stage B live after 9/29 should set
+# ANTHROPIC_MODEL to whatever's current rather than relying on this default.
+MODEL_ID = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5")
 
 # The canonical definition source for each primitive. "connection" isn't a
 # canonical primitive at all -- it's mapped to "connector" on purpose, since
@@ -349,13 +359,43 @@ RATIONALE: <one sentence, and flag any Rule 5 concern from the context if presen
 """
 
 class StageBError(Exception):
-    """A live call_model() invocation failed (network, HTTP, or parse error)."""
-  
+    """A live call_model() invocation failed (network, HTTP, or parse error) --
+    including the specific failure this class was added for: MODEL_ID pointing
+    at a model that's since been retired. The Anthropic API returns this as an
+    HTTP error (a 404 not_found_error is the typical shape for an unrecognized
+    or retired model string), which urllib turns into an unhandled
+    urllib.error.HTTPError if nothing catches it -- exactly what would have
+    happened running this script, unattended, after Sonnet 4.5's 9/29
+    deprecation, with the model ID still hardcoded. See MODEL_ID's own comment,
+    above, for the fix and what it does and doesn't guarantee."""
+
+
 def call_model(prompt: str) -> str | None:
+    """Real Stage B: an actual Anthropic API call. Returns the raw response
+    text, or None if no API key is configured (this prototype's sandbox has
+    network access to api.anthropic.com but no key -- see README). Raises
+    StageBError on any failure once a key *is* configured -- a network error,
+    an HTTP error (including a retired-model 404), or a response shape this
+    script doesn't recognize -- so main() can record which candidates failed
+    and why, instead of the whole run dying on the first bad call."""
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         return None
-    req = urllib.request.Request(...)   # unchanged
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=json.dumps(
+            {
+                "model": MODEL_ID,
+                "max_tokens": 200,
+                "messages": [{"role": "user", "content": prompt}],
+            }
+        ).encode(),
+        headers={
+            "content-type": "application/json",
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01",
+        },
+    )
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             body = json.loads(resp.read())
@@ -423,45 +463,36 @@ def main():
             candidates.append(entry)
 
     OUTPUT.mkdir(exist_ok=True)
-
-    ran_any_model_call = False
-    for c in candidates:
-        if c.get("status") != "PENDING_STAGE_B":
-            continue
-        response = call_model(c["stage_b_prompt"])
-        if response is None:
-            continue
-        ran_any_model_call = True
-        vm = re.search(r"VERDICT:\s*(\w+)", response)
-        rm = re.search(r"RATIONALE:\s*(.+)", response)
-        c["status"] = vm.group(1) if vm else "UNPARSEABLE"
-        c["rationale"] = rm.group(1).strip() if rm else response.strip()
-        c["verdict_source"] = "anthropic-api"
-
     out_path = OUTPUT / "semantic_drift_candidates.json"
-ran_any_model_call = False
-try:
-    for c in candidates:
-        if c.get("status") != "PENDING_STAGE_B":
-            continue
-        try:
-            response = call_model(c["stage_b_prompt"])
-        except StageBError as e:
-            c["status"] = "STAGE_B_ERROR"
-            c["error"] = str(e)
-            continue
-        if response is None:
-            continue
-        ran_any_model_call = True
-        vm = re.search(r"VERDICT:\s*(\w+)", response)
-        rm = re.search(r"RATIONALE:\s*(.+)", response)
-        c["status"] = vm.group(1) if vm else "UNPARSEABLE"
-        c["rationale"] = rm.group(1).strip() if rm else response.strip()
-        c["verdict_source"] = "anthropic-api"
-finally:
-    out_path.write_text(json.dumps(candidates, indent=2))
-  
-    out_path.write_text(json.dumps(candidates, indent=2))
+
+    # try/finally: write whatever candidates we have -- including any that
+    # got as far as STAGE_B_ERROR -- even if a later candidate's call_model()
+    # raises something StageBError doesn't already wrap (it shouldn't, since
+    # call_model() catches broadly, but this is the difference between a
+    # reviewer getting a partial candidates.json with clear per-candidate
+    # errors to read, and getting nothing at all, on the exact kind of
+    # mid-run failure this whole change exists to survive.
+    ran_any_model_call = False
+    try:
+        for c in candidates:
+            if c.get("status") != "PENDING_STAGE_B":
+                continue
+            try:
+                response = call_model(c["stage_b_prompt"])
+            except StageBError as e:
+                c["status"] = "STAGE_B_ERROR"
+                c["error"] = str(e)
+                continue
+            if response is None:
+                continue
+            ran_any_model_call = True
+            vm = re.search(r"VERDICT:\s*(\w+)", response)
+            rm = re.search(r"RATIONALE:\s*(.+)", response)
+            c["status"] = vm.group(1) if vm else "UNPARSEABLE"
+            c["rationale"] = rm.group(1).strip() if rm else response.strip()
+            c["verdict_source"] = "anthropic-api"
+    finally:
+        out_path.write_text(json.dumps(candidates, indent=2))
 
     print(f"Surface pages checked: {len(SURFACE_PAGES)}")
     print(f"Definitional candidates extracted: {sum(1 for c in candidates if 'stage_b_prompt' in c)}")
@@ -471,16 +502,26 @@ finally:
           f"{sum(1 for c in candidates if c.get('length_heuristic_flag'))}")
     print()
 
+    stage_b_errors = [c for c in candidates if c.get("status") == "STAGE_B_ERROR"]
+
     if not os.environ.get("ANTHROPIC_API_KEY"):
         print("ANTHROPIC_API_KEY is not set -- Stage B (the semantic comparison) cannot run")
         print("unattended in this environment. All extracted candidates and their exact")
         print(f"Stage B prompts were written to {out_path} for a human, or this same")
-        print("script pointed at a real key, to complete.")
+        print(f"script pointed at a real key (model: {MODEL_ID}), to complete.")
         print()
         print("See output/semantic_drift_findings.md for this run's actual Stage B verdicts")
         print("(produced by applying the prompt above by hand -- see that file for how).")
+    elif stage_b_errors:
+        print(f"Stage B FAILED on {len(stage_b_errors)} of "
+              f"{sum(1 for c in candidates if 'stage_b_prompt' in c)} candidate(s) -- see "
+              f"the \"error\" field in {out_path} for each. First failure: "
+              f"{stage_b_errors[0]['error']!r}. If this mentions the model, check that "
+              f"MODEL_ID ({MODEL_ID!r}, from ANTHROPIC_MODEL if set) is still a valid, "
+              "current model -- this is exactly the failure mode a retired model ID "
+              "produces.")
     elif ran_any_model_call:
-        print(f"Stage B complete via the Anthropic API. Wrote {out_path}")
+        print(f"Stage B complete via the Anthropic API (model: {MODEL_ID}). Wrote {out_path}")
     else:
         print(f"No candidates required Stage B. Wrote {out_path}")
 
