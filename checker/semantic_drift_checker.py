@@ -74,6 +74,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 SCRAPE = ROOT / "scrape"
 OUTPUT = ROOT / "output"
+MODEL_ID = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 
 # The canonical definition source for each primitive. "connection" isn't a
 # canonical primitive at all -- it's mapped to "connector" on purpose, since
@@ -359,7 +360,7 @@ def call_model(prompt: str) -> str | None:
         "https://api.anthropic.com/v1/messages",
         data=json.dumps(
             {
-                "model": "claude-sonnet-4-5",
+                "model": MODEL_ID,
                 "max_tokens": 200,
                 "messages": [{"role": "user", "content": prompt}],
             }
