@@ -153,11 +153,45 @@ def extract_h1(text: str) -> str | None:
     return None
 
 
+def slugify(text: str) -> str:
+    """GitHub-style heading-anchor slug: lowercase, strip everything except
+    word characters/spaces/hyphens, spaces to hyphens. This is what turns a
+    heading like "## DCR and CIMD details" into the fragment
+    "#dcr-and-cimd-details" that a link into that section actually uses.
+
+    Known gap, not fixed here: doesn't dedupe repeated headings the way
+    GitHub does (appending -1, -2, ... to the second/third occurrence of the
+    same heading text on one page). Not observed in this run's 50 pages;
+    would need a per-page seen-slugs counter if it came up.
+    """
+    s = text.strip().lower()
+    s = re.sub(r"[^\w\s-]", "", s)
+    s = re.sub(r"\s+", "-", s)
+    return s
+
+
+def extract_section_headings(text: str) -> dict:
+    """Map heading-anchor slug -> raw heading text, for every H2-H6 on a
+    scraped page. Lets a fragment link's anchor text be compared against the
+    specific section it targets instead of the whole page's title -- see
+    README's fragment-link section for why that distinction matters."""
+    headings = {}
+    for line in text.splitlines():
+        line = line.strip()
+        m = re.match(r"^(#{2,6})\s+(.*)$", line)
+        if m:
+            heading_text = re.sub(r"[*_`]", "", m.group(2)).strip()
+            if heading_text:
+                headings[slugify(heading_text)] = heading_text
+    return headings
+
+
 def main():
     known, overrides = load_known_pages()
 
     md_files = sorted(SCRAPE.rglob("*.md"))
     scraped_titles = {}
+    section_headings = {}  # canonical_path -> {slug: heading_text}, scraped pages only
     for md in md_files:
         text = md.read_text(errors="replace")
         if text.startswith("FETCH_FAILED"):
@@ -165,6 +199,7 @@ def main():
         h1 = extract_h1(text)
         if h1:
             scraped_titles[scrape_path_to_canonical(md)] = h1
+        section_headings[scrape_path_to_canonical(md)] = extract_section_headings(text)
 
     # Precompute a title index for "did you mean" suggestions on broken links.
     title_index = []  # (title, canonical_path)
@@ -186,6 +221,7 @@ def main():
         for match in LINK_RE.finditer(text):
             anchor, href = match.group(1), match.group(2)
             target = normalize(href)
+            frag = urlparse(href).fragment or None
             if target == source_path:
                 continue  # self-link / anchor-only, not interesting here
 
@@ -234,16 +270,46 @@ def main():
                         entry["reason"] = "Target resolves but no known title (not in llms.txt, not one of the 50 scraped pages) to compare anchor text against."
                         counts["UNVERIFIED"] += 1
                     else:
-                        sim = similarity(anchor, real_title)
+                        # Default comparison is against the whole page's title.
+                        # For a fragment link into a page we actually scraped,
+                        # compare against the specific section it targets
+                        # instead -- a fragment link's anchor text is supposed
+                        # to name the section, not the page, so comparing it
+                        # to the page title is close to a category error (see
+                        # README's fragment-link section / run_log.md).
+                        compare_text, compare_source = real_title, title_source
+                        if frag:
+                            headings = section_headings.get(target)
+                            if headings is None:
+                                entry["fragment_note"] = (
+                                    f"Target page {target!r} wasn't one of the 50 scraped "
+                                    "pages, so no section-heading data exists for it here; "
+                                    "falling back to comparing anchor text against the page "
+                                    "title, the same as a fragment-less link."
+                                )
+                            elif frag in headings:
+                                compare_text, compare_source = headings[frag], "scraped section heading"
+                                entry["section_heading"] = headings[frag]
+                            else:
+                                entry["fragment_note"] = (
+                                    f"Target page was scraped, but no H2-H6 heading's anchor "
+                                    f"slug matches fragment {frag!r} (may target a definition-"
+                                    "list term, bold inline text, or a manually-set HTML "
+                                    "anchor id, none of which this checker extracts). Falling "
+                                    "back to comparing anchor text against the page title."
+                                )
+                        sim = similarity(anchor, compare_text)
                         entry["real_title"] = real_title
                         entry["real_title_source"] = title_source
+                        entry["compared_against"] = compare_text
+                        entry["compared_against_source"] = compare_source
                         entry["anchor_title_similarity"] = round(sim, 2)
                         if sim >= 0.5:
                             entry["status"] = "OK"
                             counts["OK"] += 1
                         else:
                             entry["status"] = "ANCHOR_MISMATCH"
-                            entry["reason"] = f"Anchor text {anchor!r} doesn't look like the target's real title {real_title!r} (token overlap {sim:.2f})."
+                            entry["reason"] = f"Anchor text {anchor!r} doesn't look like {compare_source} {compare_text!r} (token overlap {sim:.2f})."
                             counts["ANCHOR_MISMATCH"] += 1
 
             findings.append(entry)
@@ -267,7 +333,7 @@ def main():
     print("--- ANCHOR_MISMATCH ---")
     for f in findings:
         if f["status"] == "ANCHOR_MISMATCH":
-            print(f"  [{f['source_page']}] {f['anchor_text']!r} -> {f['resolved_target']} (real title: {f['real_title']!r}, overlap {f['anchor_title_similarity']})")
+            print(f"  [{f['source_page']}] {f['anchor_text']!r} -> {f['resolved_target']} (compared against {f['compared_against_source']}: {f['compared_against']!r}, overlap {f['anchor_title_similarity']})")
     print()
     print("--- UNINDEXED ---")
     for f in findings:

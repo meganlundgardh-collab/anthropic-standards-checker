@@ -6,6 +6,8 @@
     "resolved_target": "/claude-science/how-claude-science-works-with-your-data",
     "real_title": "How Claude Science works with your data",
     "real_title_source": "llms.txt",
+    "compared_against": "How Claude Science works with your data",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -16,6 +18,8 @@
     "resolved_target": "/claude-science/enable-claude-science",
     "real_title": "Enable Claude Science",
     "real_title_source": "llms.txt",
+    "compared_against": "Enable Claude Science",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -26,6 +30,8 @@
     "resolved_target": "/claude-tag/users/use-cases/catch-up",
     "real_title": "Catch up",
     "real_title_source": "llms.txt",
+    "compared_against": "Catch up",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -36,6 +42,8 @@
     "resolved_target": "/claude-tag/users/use-cases/triage-requests",
     "real_title": "Triage requests",
     "real_title_source": "llms.txt",
+    "compared_against": "Triage requests",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -46,9 +54,11 @@
     "resolved_target": "/claude-tag/users/use-cases/create-artifacts",
     "real_title": "Turn threads into docs and tickets",
     "real_title_source": "llms.txt",
+    "compared_against": "Turn threads into docs and tickets",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.33,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'turn a discussion into a doc' doesn't look like the target's real title 'Turn threads into docs and tickets' (token overlap 0.33)."
+    "reason": "Anchor text 'turn a discussion into a doc' doesn't look like llms.txt 'Turn threads into docs and tickets' (token overlap 0.33)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -57,31 +67,39 @@
     "resolved_target": "/claude-tag/users/use-cases/track-projects",
     "real_title": "Track projects and chase approvals",
     "real_title_source": "llms.txt",
+    "compared_against": "Track projects and chase approvals",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.25,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'track a project from channel history' doesn't look like the target's real title 'Track projects and chase approvals' (token overlap 0.25)."
+    "reason": "Anchor text 'track a project from channel history' doesn't look like llms.txt 'Track projects and chase approvals' (token overlap 0.25)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "Access bundle",
     "href": "/docs/claude-tag/concepts/glossary#access-bundle",
     "resolved_target": "/claude-tag/concepts/glossary",
+    "fragment_note": "Target page '/claude-tag/concepts/glossary' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Glossary",
     "real_title_source": "llms.txt",
+    "compared_against": "Glossary",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Access bundle' doesn't look like the target's real title 'Glossary' (token overlap 0.00)."
+    "reason": "Anchor text 'Access bundle' doesn't look like llms.txt 'Glossary' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "scope",
     "href": "/docs/claude-tag/concepts/glossary#scope",
     "resolved_target": "/claude-tag/concepts/glossary",
+    "fragment_note": "Target page '/claude-tag/concepts/glossary' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Glossary",
     "real_title_source": "llms.txt",
+    "compared_against": "Glossary",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'scope' doesn't look like the target's real title 'Glossary' (token overlap 0.00)."
+    "reason": "Anchor text 'scope' doesn't look like llms.txt 'Glossary' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -90,9 +108,11 @@
     "resolved_target": "/claude-tag/admins/setup-overview",
     "real_title": "Set up Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Set up Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'setup' doesn't look like the target's real title 'Set up Claude Tag' (token overlap 0.00)."
+    "reason": "Anchor text 'setup' doesn't look like llms.txt 'Set up Claude Tag' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -101,6 +121,8 @@
     "resolved_target": "/claude-tag/concepts/agent-identity",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -111,6 +133,8 @@
     "resolved_target": "/claude-tag/concepts/personal-connectors",
     "real_title": "Personal connectors in channels",
     "real_title_source": "llms.txt",
+    "compared_against": "Personal connectors in channels",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -119,11 +143,14 @@
     "anchor_text": "per-scope custom instructions",
     "href": "/docs/claude-tag/admins/attach-to-scope#add-custom-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.25,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'per-scope custom instructions' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.25)."
+    "reason": "Anchor text 'per-scope custom instructions' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.25)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -132,6 +159,8 @@
     "resolved_target": "/claude-tag/admins/connections/notion",
     "real_title": "Connect Notion",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Notion",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -142,6 +171,8 @@
     "resolved_target": "/claude-tag/admins/connections/atlassian",
     "real_title": "Connect Jira and Confluence",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Jira and Confluence",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -152,6 +183,8 @@
     "resolved_target": "/claude-tag/admins/connections/gitlab",
     "real_title": "Connect GitLab",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect GitLab",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -162,9 +195,11 @@
     "resolved_target": "/claude-tag/admins/configure-github",
     "real_title": "Configure GitHub access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure GitHub access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.33,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Claude GitHub App' doesn't look like the target's real title 'Configure GitHub access' (token overlap 0.33)."
+    "reason": "Anchor text 'Claude GitHub App' doesn't look like llms.txt 'Configure GitHub access' (token overlap 0.33)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -173,6 +208,8 @@
     "resolved_target": "/claude-tag/admins/connections/snowflake",
     "real_title": "Connect Snowflake",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Snowflake",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -183,6 +220,8 @@
     "resolved_target": "/claude-tag/admins/connections/sentry",
     "real_title": "Connect Sentry",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Sentry",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -193,6 +232,8 @@
     "resolved_target": "/claude-tag/admins/connections/datadog",
     "real_title": "Connect Datadog",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Datadog",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -203,6 +244,8 @@
     "resolved_target": "/claude-tag/admins/connections/pagerduty",
     "real_title": "Connect PagerDuty",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect PagerDuty",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -213,6 +256,8 @@
     "resolved_target": "/claude-tag/admins/connections/linear",
     "real_title": "Connect Linear",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Linear",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -223,6 +268,8 @@
     "resolved_target": "/claude-tag/admins/connections/asana",
     "real_title": "Connect Asana",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Asana",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -233,6 +280,8 @@
     "resolved_target": "/claude-tag/admins/connections/atlassian",
     "real_title": "Connect Jira and Confluence",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Jira and Confluence",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -243,6 +292,8 @@
     "resolved_target": "/claude-tag/admins/connections/hubspot",
     "real_title": "Connect HubSpot",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect HubSpot",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -253,6 +304,8 @@
     "resolved_target": "/claude-tag/admins/connections/gong",
     "real_title": "Connect Gong",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Gong",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -263,6 +316,8 @@
     "resolved_target": "/claude-tag/admins/connections/salesforce",
     "real_title": "Connect Salesforce",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Salesforce",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -273,6 +328,8 @@
     "resolved_target": "/claude-tag/admins/connections/overview",
     "real_title": "Per-service connection guides",
     "real_title_source": "llms.txt",
+    "compared_against": "Per-service connection guides",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -283,6 +340,8 @@
     "resolved_target": "/claude-tag/admins/connections/google",
     "real_title": "Connect Google Drive, Calendar, and Gmail",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Google Drive, Calendar, and Gmail",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -291,11 +350,14 @@
     "anchor_text": "attach that bundle only to that channel",
     "href": "/docs/claude-tag/admins/attach-to-scope#attach-to-a-channel",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.25,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'attach that bundle only to that channel' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.25)."
+    "reason": "Anchor text 'attach that bundle only to that channel' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.25)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -304,53 +366,67 @@
     "resolved_target": "/claude-tag/admins/connections/custom",
     "real_title": "Connect a service that isn't in the list",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect a service that isn't in the list",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Custom connection guide' doesn't look like the target's real title \"Connect a service that isn't in the list\" (token overlap 0.00)."
+    "reason": "Anchor text 'Custom connection guide' doesn't look like llms.txt \"Connect a service that isn't in the list\" (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "Configure page",
     "href": "/docs/claude-tag/users/good-habits#configure-claude-for-a-channel",
     "resolved_target": "/claude-tag/users/good-habits",
+    "fragment_note": "Target page '/claude-tag/users/good-habits' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Good habits for working with Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Good habits for working with Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Configure page' doesn't look like the target's real title 'Good habits for working with Claude Tag' (token overlap 0.00)."
+    "reason": "Anchor text 'Configure page' doesn't look like llms.txt 'Good habits for working with Claude Tag' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "Channel managers",
     "href": "/docs/claude-tag/admins/restrict-access#delegate-channel-setup-to-channel-managers",
     "resolved_target": "/claude-tag/admins/restrict-access",
+    "fragment_note": "Target page '/claude-tag/admins/restrict-access' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Restrict where Claude Tag operates",
     "real_title_source": "llms.txt",
+    "compared_against": "Restrict where Claude Tag operates",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Channel managers' doesn't look like the target's real title 'Restrict where Claude Tag operates' (token overlap 0.00)."
+    "reason": "Anchor text 'Channel managers' doesn't look like llms.txt 'Restrict where Claude Tag operates' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "sandbox",
     "href": "/docs/claude-tag/concepts/agent-identity#channel-sessions",
     "resolved_target": "/claude-tag/concepts/agent-identity",
+    "fragment_note": "Target page '/claude-tag/concepts/agent-identity' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'sandbox' doesn't look like the target's real title 'How agent identity works' (token overlap 0.00)."
+    "reason": "Anchor text 'sandbox' doesn't look like llms.txt 'How agent identity works' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "environment",
     "href": "/docs/claude-tag/concepts/glossary#environment",
     "resolved_target": "/claude-tag/concepts/glossary",
+    "fragment_note": "Target page '/claude-tag/concepts/glossary' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Glossary",
     "real_title_source": "llms.txt",
+    "compared_against": "Glossary",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'environment' doesn't look like the target's real title 'Glossary' (token overlap 0.00)."
+    "reason": "Anchor text 'environment' doesn't look like llms.txt 'Glossary' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -359,17 +435,22 @@
     "resolved_target": "/claude-tag/admins/attach-to-scope",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Attach bundles to scopes' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+    "reason": "Anchor text 'Attach bundles to scopes' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "Agent Proxy",
     "href": "/docs/claude-tag/concepts/agent-identity#agent-proxy",
     "resolved_target": "/claude-tag/concepts/agent-identity",
+    "fragment_note": "Target page '/claude-tag/concepts/agent-identity' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -378,33 +459,41 @@
     "anchor_text": "environment",
     "href": "/docs/claude-tag/concepts/glossary#environment",
     "resolved_target": "/claude-tag/concepts/glossary",
+    "fragment_note": "Target page '/claude-tag/concepts/glossary' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Glossary",
     "real_title_source": "llms.txt",
+    "compared_against": "Glossary",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'environment' doesn't look like the target's real title 'Glossary' (token overlap 0.00)."
+    "reason": "Anchor text 'environment' doesn't look like llms.txt 'Glossary' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "Configure the environment for a scope",
     "href": "/docs/claude-tag/admins/customize#configure-the-environment-for-a-scope",
     "resolved_target": "/claude-tag/admins/customize",
+    "section_heading": "Configure the environment for a scope",
     "real_title": "Customize Claude Tag",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Configure the environment for a scope' doesn't look like the target's real title 'Customize Claude Tag' (token overlap 0.00)."
+    "compared_against": "Configure the environment for a scope",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "Web search vs. network requests",
     "href": "/docs/claude-tag/concepts/agent-identity#web-search-vs-network-requests",
     "resolved_target": "/claude-tag/concepts/agent-identity",
+    "fragment_note": "Target page '/claude-tag/concepts/agent-identity' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Web search vs. network requests' doesn't look like the target's real title 'How agent identity works' (token overlap 0.00)."
+    "reason": "Anchor text 'Web search vs. network requests' doesn't look like llms.txt 'How agent identity works' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -413,6 +502,8 @@
     "resolved_target": "/claude-tag/admins/connections/google",
     "real_title": "Connect Google Drive, Calendar, and Gmail",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect Google Drive, Calendar, and Gmail",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -423,6 +514,8 @@
     "resolved_target": "/claude-tag/admins/configure-github",
     "real_title": "Configure GitHub access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure GitHub access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -431,8 +524,11 @@
     "anchor_text": "how Agent Proxy works",
     "href": "/docs/claude-tag/concepts/agent-identity#agent-proxy",
     "resolved_target": "/claude-tag/concepts/agent-identity",
+    "fragment_note": "Target page '/claude-tag/concepts/agent-identity' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.67,
     "status": "OK"
   },
@@ -441,33 +537,42 @@
     "anchor_text": "DMs",
     "href": "/docs/claude-tag/concepts/agent-identity#direct-message-channels",
     "resolved_target": "/claude-tag/concepts/agent-identity",
+    "fragment_note": "Target page '/claude-tag/concepts/agent-identity' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'DMs' doesn't look like the target's real title 'How agent identity works' (token overlap 0.00)."
+    "reason": "Anchor text 'DMs' doesn't look like llms.txt 'How agent identity works' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "Configure page",
     "href": "/docs/claude-tag/users/good-habits#configure-claude-for-a-channel",
     "resolved_target": "/claude-tag/users/good-habits",
+    "fragment_note": "Target page '/claude-tag/users/good-habits' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Good habits for working with Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Good habits for working with Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Configure page' doesn't look like the target's real title 'Good habits for working with Claude Tag' (token overlap 0.00)."
+    "reason": "Anchor text 'Configure page' doesn't look like llms.txt 'Good habits for working with Claude Tag' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "restricted editing to admins",
     "href": "/docs/claude-tag/admins/attach-to-scope#restrict-who-can-set-channel-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'restricted editing to admins' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+    "reason": "Anchor text 'restricted editing to admins' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -476,6 +581,8 @@
     "resolved_target": "/claude-tag/admins/skills-repo",
     "real_title": "Set up a skills repository Claude can update",
     "real_title_source": "llms.txt",
+    "compared_against": "Set up a skills repository Claude can update",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -484,22 +591,28 @@
     "anchor_text": "restricted editing to admins",
     "href": "/docs/claude-tag/admins/attach-to-scope#restrict-who-can-set-channel-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'restricted editing to admins' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+    "reason": "Anchor text 'restricted editing to admins' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
     "anchor_text": "What survives between replies",
     "href": "/docs/claude-tag/concepts/how-it-works#what-survives-between-replies",
     "resolved_target": "/claude-tag/concepts/how-it-works",
+    "fragment_note": "Target page '/claude-tag/concepts/how-it-works' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How Claude Tag works",
     "real_title_source": "llms.txt",
+    "compared_against": "How Claude Tag works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'What survives between replies' doesn't look like the target's real title 'How Claude Tag works' (token overlap 0.00)."
+    "reason": "Anchor text 'What survives between replies' doesn't look like llms.txt 'How Claude Tag works' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/add-connections",
@@ -508,6 +621,8 @@
     "resolved_target": "/claude-tag/admins/set-spend-limit",
     "real_title": "Set a spend limit",
     "real_title_source": "llms.txt",
+    "compared_against": "Set a spend limit",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -518,6 +633,8 @@
     "resolved_target": "/claude-tag/admins/configure-github",
     "real_title": "Configure GitHub access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure GitHub access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -526,8 +643,11 @@
     "anchor_text": "How agent identity works",
     "href": "/docs/claude-tag/concepts/agent-identity#agent-proxy",
     "resolved_target": "/claude-tag/concepts/agent-identity",
+    "fragment_note": "Target page '/claude-tag/concepts/agent-identity' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -536,11 +656,14 @@
     "anchor_text": "channel manager",
     "href": "/docs/claude-tag/admins/restrict-access#delegate-channel-setup-to-channel-managers",
     "resolved_target": "/claude-tag/admins/restrict-access",
+    "fragment_note": "Target page '/claude-tag/admins/restrict-access' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Restrict where Claude Tag operates",
     "real_title_source": "llms.txt",
+    "compared_against": "Restrict where Claude Tag operates",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'channel manager' doesn't look like the target's real title 'Restrict where Claude Tag operates' (token overlap 0.00)."
+    "reason": "Anchor text 'channel manager' doesn't look like llms.txt 'Restrict where Claude Tag operates' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -549,6 +672,8 @@
     "resolved_target": "/claude-tag/admins/add-connections",
     "real_title": "Give Claude access to your tools",
     "real_title_source": "llms.txt",
+    "compared_against": "Give Claude access to your tools",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -557,11 +682,13 @@
     "anchor_text": "Bundle Plugins tab",
     "href": "/docs/claude-tag/admins/add-connections#attach-plugins",
     "resolved_target": "/claude-tag/admins/add-connections",
+    "section_heading": "Attach plugins",
     "real_title": "Give Claude access to your tools",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Bundle Plugins tab' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.00)."
+    "compared_against": "Attach plugins",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -570,6 +697,8 @@
     "resolved_target": "/claude-tag/admins/skills-repo",
     "real_title": "Set up a skills repository Claude can update",
     "real_title_source": "llms.txt",
+    "compared_against": "Set up a skills repository Claude can update",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -578,22 +707,28 @@
     "anchor_text": "Configure page",
     "href": "/docs/claude-tag/users/good-habits#configure-claude-for-a-channel",
     "resolved_target": "/claude-tag/users/good-habits",
+    "fragment_note": "Target page '/claude-tag/users/good-habits' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Good habits for working with Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Good habits for working with Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Configure page' doesn't look like the target's real title 'Good habits for working with Claude Tag' (token overlap 0.00)."
+    "reason": "Anchor text 'Configure page' doesn't look like llms.txt 'Good habits for working with Claude Tag' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "Per-scope instructions",
     "href": "/docs/claude-tag/admins/attach-to-scope#add-custom-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.33,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Per-scope instructions' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.33)."
+    "reason": "Anchor text 'Per-scope instructions' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.33)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -602,6 +737,8 @@
     "resolved_target": "/claude-tag/users/memory",
     "real_title": "What Claude Tag remembers",
     "real_title_source": "llms.txt",
+    "compared_against": "What Claude Tag remembers",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -610,33 +747,41 @@
     "anchor_text": "Add custom instructions",
     "href": "/docs/claude-tag/admins/attach-to-scope#add-custom-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Add custom instructions' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+    "reason": "Anchor text 'Add custom instructions' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "Turn automatic replies on or off",
     "href": "/docs/claude-tag/users/when-claude-responds#turn-automatic-replies-on-or-off",
     "resolved_target": "/claude-tag/users/when-claude-responds",
+    "fragment_note": "Target page '/claude-tag/users/when-claude-responds' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Control when Claude Tag responds",
     "real_title_source": "llms.txt",
+    "compared_against": "Control when Claude Tag responds",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Turn automatic replies on or off' doesn't look like the target's real title 'Control when Claude Tag responds' (token overlap 0.00)."
+    "reason": "Anchor text 'Turn automatic replies on or off' doesn't look like llms.txt 'Control when Claude Tag responds' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "Attach plugins",
     "href": "/docs/claude-tag/admins/add-connections#attach-plugins",
     "resolved_target": "/claude-tag/admins/add-connections",
+    "section_heading": "Attach plugins",
     "real_title": "Give Claude access to your tools",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Attach plugins' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.00)."
+    "compared_against": "Attach plugins",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -645,31 +790,39 @@
     "resolved_target": "/claude-tag/admins/add-connections",
     "real_title": "Give Claude access to your tools",
     "real_title_source": "llms.txt",
+    "compared_against": "Give Claude access to your tools",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Add connections' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.00)."
+    "reason": "Anchor text 'Add connections' doesn't look like llms.txt 'Give Claude access to your tools' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "**Enable Claude Tag** switch",
     "href": "/docs/claude-tag/admins/workspaces#turn-claude-tag-on-or-off-on-the-team-plan",
     "resolved_target": "/claude-tag/admins/workspaces",
+    "fragment_note": "Target page '/claude-tag/admins/workspaces' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Manage workspaces and versions",
     "real_title_source": "llms.txt",
+    "compared_against": "Manage workspaces and versions",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text '**Enable Claude Tag** switch' doesn't look like the target's real title 'Manage workspaces and versions' (token overlap 0.00)."
+    "reason": "Anchor text '**Enable Claude Tag** switch' doesn't look like llms.txt 'Manage workspaces and versions' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "Migrate from the earlier Claude in Slack",
     "href": "/docs/claude-tag/admins/workspaces#set-the-version-for-a-scope",
     "resolved_target": "/claude-tag/admins/workspaces",
+    "fragment_note": "Target page '/claude-tag/admins/workspaces' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Manage workspaces and versions",
     "real_title_source": "llms.txt",
+    "compared_against": "Manage workspaces and versions",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Migrate from the earlier Claude in Slack' doesn't look like the target's real title 'Manage workspaces and versions' (token overlap 0.00)."
+    "reason": "Anchor text 'Migrate from the earlier Claude in Slack' doesn't look like llms.txt 'Manage workspaces and versions' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -678,6 +831,8 @@
     "resolved_target": "/claude-tag/concepts/personal-connectors",
     "real_title": "Personal connectors in channels",
     "real_title_source": "llms.txt",
+    "compared_against": "Personal connectors in channels",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -686,11 +841,14 @@
     "anchor_text": "custom instructions",
     "href": "/docs/claude-tag/admins/attach-to-scope#add-custom-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'custom instructions' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+    "reason": "Anchor text 'custom instructions' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -699,9 +857,11 @@
     "resolved_target": "/claude-tag/admins/connections/custom",
     "real_title": "Connect a service that isn't in the list",
     "real_title_source": "llms.txt",
+    "compared_against": "Connect a service that isn't in the list",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'add a custom connection' doesn't look like the target's real title \"Connect a service that isn't in the list\" (token overlap 0.00)."
+    "reason": "Anchor text 'add a custom connection' doesn't look like llms.txt \"Connect a service that isn't in the list\" (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -710,9 +870,11 @@
     "resolved_target": "/claude-tag/users/memory",
     "real_title": "What Claude Tag remembers",
     "real_title_source": "llms.txt",
+    "compared_against": "What Claude Tag remembers",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Memory' doesn't look like the target's real title 'What Claude Tag remembers' (token overlap 0.00)."
+    "reason": "Anchor text 'Memory' doesn't look like llms.txt 'What Claude Tag remembers' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -721,9 +883,11 @@
     "resolved_target": "/claude-tag/users/memory",
     "real_title": "What Claude Tag remembers",
     "real_title_source": "llms.txt",
+    "compared_against": "What Claude Tag remembers",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Memory' doesn't look like the target's real title 'What Claude Tag remembers' (token overlap 0.00)."
+    "reason": "Anchor text 'Memory' doesn't look like llms.txt 'What Claude Tag remembers' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -732,6 +896,8 @@
     "resolved_target": "/claude-tag/users/when-claude-responds",
     "real_title": "Control when Claude Tag responds",
     "real_title_source": "llms.txt",
+    "compared_against": "Control when Claude Tag responds",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -742,6 +908,8 @@
     "resolved_target": "/claude-tag/users/proactivity",
     "real_title": "Set up routines",
     "real_title_source": "llms.txt",
+    "compared_against": "Set up routines",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -752,17 +920,22 @@
     "resolved_target": "/claude-tag/users/memory",
     "real_title": "What Claude Tag remembers",
     "real_title_source": "llms.txt",
+    "compared_against": "What Claude Tag remembers",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Memory' doesn't look like the target's real title 'What Claude Tag remembers' (token overlap 0.00)."
+    "reason": "Anchor text 'Memory' doesn't look like llms.txt 'What Claude Tag remembers' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "`@Claude !configure`",
     "href": "/docs/claude-tag/users/commands#get-the-link-to-configure-a-channel",
     "resolved_target": "/claude-tag/users/commands",
+    "fragment_note": "Target page '/claude-tag/users/commands' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Commands Claude Tag understands",
     "real_title_source": "llms.txt",
+    "compared_against": "Commands Claude Tag understands",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -771,33 +944,42 @@
     "anchor_text": "restricted editing to admins",
     "href": "/docs/claude-tag/admins/attach-to-scope#restrict-who-can-set-channel-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'restricted editing to admins' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+    "reason": "Anchor text 'restricted editing to admins' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "configure Claude for a channel",
     "href": "/docs/claude-tag/users/good-habits#configure-claude-for-a-channel",
     "resolved_target": "/claude-tag/users/good-habits",
+    "fragment_note": "Target page '/claude-tag/users/good-habits' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Good habits for working with Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Good habits for working with Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.33,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'configure Claude for a channel' doesn't look like the target's real title 'Good habits for working with Claude Tag' (token overlap 0.33)."
+    "reason": "Anchor text 'configure Claude for a channel' doesn't look like llms.txt 'Good habits for working with Claude Tag' (token overlap 0.33)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "restricted editing to admins",
     "href": "/docs/claude-tag/admins/attach-to-scope#restrict-who-can-set-channel-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'restricted editing to admins' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+    "reason": "Anchor text 'restricted editing to admins' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -806,6 +988,8 @@
     "resolved_target": "/claude-tag/users/proactivity",
     "real_title": "Set up routines",
     "real_title_source": "llms.txt",
+    "compared_against": "Set up routines",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -814,33 +998,42 @@
     "anchor_text": "channel managers",
     "href": "/docs/claude-tag/admins/restrict-access#delegate-channel-setup-to-channel-managers",
     "resolved_target": "/claude-tag/admins/restrict-access",
+    "fragment_note": "Target page '/claude-tag/admins/restrict-access' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Restrict where Claude Tag operates",
     "real_title_source": "llms.txt",
+    "compared_against": "Restrict where Claude Tag operates",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'channel managers' doesn't look like the target's real title 'Restrict where Claude Tag operates' (token overlap 0.00)."
+    "reason": "Anchor text 'channel managers' doesn't look like llms.txt 'Restrict where Claude Tag operates' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "environment",
     "href": "/docs/claude-tag/concepts/glossary#environment",
     "resolved_target": "/claude-tag/concepts/glossary",
+    "fragment_note": "Target page '/claude-tag/concepts/glossary' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Glossary",
     "real_title_source": "llms.txt",
+    "compared_against": "Glossary",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'environment' doesn't look like the target's real title 'Glossary' (token overlap 0.00)."
+    "reason": "Anchor text 'environment' doesn't look like llms.txt 'Glossary' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "Channel member edits",
     "href": "/docs/claude-tag/admins/attach-to-scope#restrict-who-can-set-channel-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.33,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Channel member edits' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.33)."
+    "reason": "Anchor text 'Channel member edits' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.33)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -849,6 +1042,8 @@
     "resolved_target": "/claude-tag/users/models",
     "real_title": "Choose the model Claude Tag uses",
     "real_title_source": "llms.txt",
+    "compared_against": "Choose the model Claude Tag uses",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -857,22 +1052,27 @@
     "anchor_text": "channel manager",
     "href": "/docs/claude-tag/admins/restrict-access#delegate-channel-setup-to-channel-managers",
     "resolved_target": "/claude-tag/admins/restrict-access",
+    "fragment_note": "Target page '/claude-tag/admins/restrict-access' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Restrict where Claude Tag operates",
     "real_title_source": "llms.txt",
+    "compared_against": "Restrict where Claude Tag operates",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'channel manager' doesn't look like the target's real title 'Restrict where Claude Tag operates' (token overlap 0.00)."
+    "reason": "Anchor text 'channel manager' doesn't look like llms.txt 'Restrict where Claude Tag operates' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "broad web access through the environment",
     "href": "/docs/claude-tag/admins/add-connections#broad-web-access-through-the-environment",
     "resolved_target": "/claude-tag/admins/add-connections",
+    "section_heading": "Broad web access through the environment",
     "real_title": "Give Claude access to your tools",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.25,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'broad web access through the environment' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.25)."
+    "compared_against": "Broad web access through the environment",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -881,28 +1081,36 @@
     "resolved_target": "/claude-tag/admins/add-connections",
     "real_title": "Give Claude access to your tools",
     "real_title_source": "llms.txt",
+    "compared_against": "Give Claude access to your tools",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'connection' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.00)."
+    "reason": "Anchor text 'connection' doesn't look like llms.txt 'Give Claude access to your tools' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "install project dependencies",
     "href": "/docs/claude-tag/admins/configure-github#install-project-dependencies",
     "resolved_target": "/claude-tag/admins/configure-github",
+    "fragment_note": "Target page '/claude-tag/admins/configure-github' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure GitHub access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure GitHub access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'install project dependencies' doesn't look like the target's real title 'Configure GitHub access' (token overlap 0.00)."
+    "reason": "Anchor text 'install project dependencies' doesn't look like llms.txt 'Configure GitHub access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "Agent Proxy",
     "href": "/docs/claude-tag/concepts/agent-identity#agent-proxy",
     "resolved_target": "/claude-tag/concepts/agent-identity",
+    "fragment_note": "Target page '/claude-tag/concepts/agent-identity' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -911,44 +1119,56 @@
     "anchor_text": "channel-only access",
     "href": "/docs/claude-tag/admins/restrict-access#how-channel-only-works",
     "resolved_target": "/claude-tag/admins/restrict-access",
+    "fragment_note": "Target page '/claude-tag/admins/restrict-access' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Restrict where Claude Tag operates",
     "real_title_source": "llms.txt",
+    "compared_against": "Restrict where Claude Tag operates",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'channel-only access' doesn't look like the target's real title 'Restrict where Claude Tag operates' (token overlap 0.00)."
+    "reason": "Anchor text 'channel-only access' doesn't look like llms.txt 'Restrict where Claude Tag operates' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "channel sessions use the wrong environment",
     "href": "/docs/claude-tag/admins/troubleshooting#channel-sessions-use-the-wrong-environment-or-can%E2%80%99t-find-one",
     "resolved_target": "/claude-tag/admins/troubleshooting",
+    "fragment_note": "Target page '/claude-tag/admins/troubleshooting' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Troubleshoot Claude Tag setup",
     "real_title_source": "llms.txt",
+    "compared_against": "Troubleshoot Claude Tag setup",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'channel sessions use the wrong environment' doesn't look like the target's real title 'Troubleshoot Claude Tag setup' (token overlap 0.00)."
+    "reason": "Anchor text 'channel sessions use the wrong environment' doesn't look like llms.txt 'Troubleshoot Claude Tag setup' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "Default Slack access",
     "href": "/docs/claude-tag/admins/attach-to-scope#how-scopes-inherit",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.33,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Default Slack access' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.33)."
+    "reason": "Anchor text 'Default Slack access' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.33)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
     "anchor_text": "custom instructions",
     "href": "/docs/claude-tag/admins/attach-to-scope#custom-instructions",
     "resolved_target": "/claude-tag/admins/attach-to-scope",
+    "fragment_note": "Target page '/claude-tag/admins/attach-to-scope' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Configure per-channel access",
     "real_title_source": "llms.txt",
+    "compared_against": "Configure per-channel access",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'custom instructions' doesn't look like the target's real title 'Configure per-channel access' (token overlap 0.00)."
+    "reason": "Anchor text 'custom instructions' doesn't look like llms.txt 'Configure per-channel access' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/admins/customize",
@@ -957,6 +1177,8 @@
     "resolved_target": "/claude-tag/concepts/settings-map",
     "real_title": "Claude Tag settings map",
     "real_title_source": "llms.txt",
+    "compared_against": "Claude Tag settings map",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -967,6 +1189,8 @@
     "resolved_target": "/claude-tag/users/memory",
     "real_title": "What Claude Tag remembers",
     "real_title_source": "llms.txt",
+    "compared_against": "What Claude Tag remembers",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -977,6 +1201,8 @@
     "resolved_target": "/claude-tag/users/good-habits",
     "real_title": "Good habits for working with Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Good habits for working with Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -987,6 +1213,8 @@
     "resolved_target": "/claude-tag/concepts/agent-identity",
     "real_title": "How agent identity works",
     "real_title_source": "llms.txt",
+    "compared_against": "How agent identity works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -997,17 +1225,22 @@
     "resolved_target": "/claude-tag/admins/setup-overview",
     "real_title": "Set up Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Set up Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'the setup overview' doesn't look like the target's real title 'Set up Claude Tag' (token overlap 0.00)."
+    "reason": "Anchor text 'the setup overview' doesn't look like llms.txt 'Set up Claude Tag' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/overview",
     "anchor_text": "how Claude Tag differs from Cowork and Claude Code",
     "href": "/docs/claude-tag/concepts/how-it-works#how-claude-tag-differs-from-cowork-and-claude-code",
     "resolved_target": "/claude-tag/concepts/how-it-works",
+    "fragment_note": "Target page '/claude-tag/concepts/how-it-works' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "How Claude Tag works",
     "real_title_source": "llms.txt",
+    "compared_against": "How Claude Tag works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.67,
     "status": "OK"
   },
@@ -1018,6 +1251,8 @@
     "resolved_target": "/claude-tag/concepts/how-it-works",
     "real_title": "How Claude Tag works",
     "real_title_source": "llms.txt",
+    "compared_against": "How Claude Tag works",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1028,9 +1263,11 @@
     "resolved_target": "/claude-tag/admins/add-connections",
     "real_title": "Give Claude access to your tools",
     "real_title_source": "llms.txt",
+    "compared_against": "Give Claude access to your tools",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'connections' doesn't look like the target's real title 'Give Claude access to your tools' (token overlap 0.00)."
+    "reason": "Anchor text 'connections' doesn't look like llms.txt 'Give Claude access to your tools' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/overview",
@@ -1039,9 +1276,11 @@
     "resolved_target": "/claude-tag/admins/customize",
     "real_title": "Customize Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Customize Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'plugins, and skills' doesn't look like the target's real title 'Customize Claude Tag' (token overlap 0.00)."
+    "reason": "Anchor text 'plugins, and skills' doesn't look like llms.txt 'Customize Claude Tag' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/overview",
@@ -1050,6 +1289,8 @@
     "resolved_target": "/claude-tag/admins/set-spend-limit",
     "real_title": "Set a spend limit",
     "real_title_source": "llms.txt",
+    "compared_against": "Set a spend limit",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1060,6 +1301,8 @@
     "resolved_target": "/claude-tag/admins/set-spend-limit",
     "real_title": "Set a spend limit",
     "real_title_source": "llms.txt",
+    "compared_against": "Set a spend limit",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1070,6 +1313,8 @@
     "resolved_target": "/claude-tag/admins/setup-overview",
     "real_title": "Set up Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Set up Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1078,22 +1323,28 @@
     "anchor_text": "connections",
     "href": "/docs/claude-tag/concepts/glossary#connection",
     "resolved_target": "/claude-tag/concepts/glossary",
+    "fragment_note": "Target page '/claude-tag/concepts/glossary' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Glossary",
     "real_title_source": "llms.txt",
+    "compared_against": "Glossary",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'connections' doesn't look like the target's real title 'Glossary' (token overlap 0.00)."
+    "reason": "Anchor text 'connections' doesn't look like llms.txt 'Glossary' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/overview",
     "anchor_text": "Allow or disable direct messages",
     "href": "/docs/claude-tag/admins/restrict-access#allow-or-disable-direct-messages",
     "resolved_target": "/claude-tag/admins/restrict-access",
+    "fragment_note": "Target page '/claude-tag/admins/restrict-access' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Restrict where Claude Tag operates",
     "real_title_source": "llms.txt",
+    "compared_against": "Restrict where Claude Tag operates",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Allow or disable direct messages' doesn't look like the target's real title 'Restrict where Claude Tag operates' (token overlap 0.00)."
+    "reason": "Anchor text 'Allow or disable direct messages' doesn't look like llms.txt 'Restrict where Claude Tag operates' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/overview",
@@ -1102,6 +1353,8 @@
     "resolved_target": "/claude-tag/users/use-cases/watch-monitors",
     "real_title": "Watch monitors and alerts",
     "real_title_source": "llms.txt",
+    "compared_against": "Watch monitors and alerts",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1112,6 +1365,8 @@
     "resolved_target": "/claude-tag/users/use-cases/triage-requests",
     "real_title": "Triage requests",
     "real_title_source": "llms.txt",
+    "compared_against": "Triage requests",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1122,6 +1377,8 @@
     "resolved_target": "/claude-tag/users/use-cases/find-answers",
     "real_title": "Find answers in your docs",
     "real_title_source": "llms.txt",
+    "compared_against": "Find answers in your docs",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1132,6 +1389,8 @@
     "resolved_target": "/claude-tag/users/use-cases/answer-data-questions",
     "real_title": "Answer data questions",
     "real_title_source": "llms.txt",
+    "compared_against": "Answer data questions",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1142,6 +1401,8 @@
     "resolved_target": "/claude-tag/users/use-cases/track-projects",
     "real_title": "Track projects and chase approvals",
     "real_title_source": "llms.txt",
+    "compared_against": "Track projects and chase approvals",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1152,6 +1413,8 @@
     "resolved_target": "/claude-tag/users/use-cases/create-artifacts",
     "real_title": "Turn threads into docs and tickets",
     "real_title_source": "llms.txt",
+    "compared_against": "Turn threads into docs and tickets",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1162,6 +1425,8 @@
     "resolved_target": "/claude-tag/users/use-cases/fix-bugs",
     "real_title": "Fix bugs",
     "real_title_source": "llms.txt",
+    "compared_against": "Fix bugs",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1172,6 +1437,8 @@
     "resolved_target": "/claude-tag/users/use-cases/your-own-channel",
     "real_title": "Work from your own channel",
     "real_title_source": "llms.txt",
+    "compared_against": "Work from your own channel",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1182,6 +1449,8 @@
     "resolved_target": "/claude-tag/users/getting-started",
     "real_title": "Get started",
     "real_title_source": "llms.txt",
+    "compared_against": "Get started",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1190,11 +1459,14 @@
     "anchor_text": "Access bundle",
     "href": "/docs/claude-tag/concepts/glossary#access-bundle",
     "resolved_target": "/claude-tag/concepts/glossary",
+    "fragment_note": "Target page '/claude-tag/concepts/glossary' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Glossary",
     "real_title_source": "llms.txt",
+    "compared_against": "Glossary",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Access bundle' doesn't look like the target's real title 'Glossary' (token overlap 0.00)."
+    "reason": "Anchor text 'Access bundle' doesn't look like llms.txt 'Glossary' (token overlap 0.00)."
   },
   {
     "source_page": "/claude-tag/overview",
@@ -1203,6 +1475,8 @@
     "resolved_target": "/claude-tag/admins/setup-overview",
     "real_title": "Set up Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Set up Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1213,6 +1487,8 @@
     "resolved_target": "/connectors/building/managing-your-listing",
     "real_title": "Managing your directory listing",
     "real_title_source": "llms.txt",
+    "compared_against": "Managing your directory listing",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1221,63 +1497,81 @@
     "anchor_text": "Authenticating with request headers",
     "href": "/docs/connectors/custom/remote-mcp#authenticating-with-request-headers",
     "resolved_target": "/connectors/custom/remote-mcp",
+    "section_heading": "Authenticating with request headers",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Authenticating with request headers' doesn't look like the target's real title 'Third party connectors with remote MCP' (token overlap 0.00)."
+    "compared_against": "Authenticating with request headers",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/authentication",
     "anchor_text": "request headers",
     "href": "/docs/connectors/custom/remote-mcp#authenticating-with-request-headers",
     "resolved_target": "/connectors/custom/remote-mcp",
+    "section_heading": "Authenticating with request headers",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'request headers' doesn't look like the target's real title 'Third party connectors with remote MCP' (token overlap 0.00)."
+    "compared_against": "Authenticating with request headers",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/authentication",
     "anchor_text": "lazy authentication",
     "href": "/docs/connectors/building/lazy-authentication#identify-the-client-with-cimd",
     "resolved_target": "/connectors/building/lazy-authentication",
+    "section_heading": "Identify the client with CIMD",
     "real_title": "Lazy authentication for MCP servers",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 1.0,
-    "status": "OK"
+    "compared_against": "Identify the client with CIMD",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'lazy authentication' doesn't look like scraped section heading 'Identify the client with CIMD' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/authentication",
     "anchor_text": "lazy authentication",
     "href": "/docs/connectors/building/lazy-authentication#return-401-not-a-tool-error",
     "resolved_target": "/connectors/building/lazy-authentication",
+    "section_heading": "Return 401, not a tool error",
     "real_title": "Lazy authentication for MCP servers",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 1.0,
-    "status": "OK"
+    "compared_against": "Return 401, not a tool error",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'lazy authentication' doesn't look like scraped section heading 'Return 401, not a tool error' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/authentication",
     "anchor_text": "Return 401, not a tool error",
     "href": "/docs/connectors/building/lazy-authentication#return-401-not-a-tool-error",
     "resolved_target": "/connectors/building/lazy-authentication",
+    "section_heading": "Return 401, not a tool error",
     "real_title": "Lazy authentication for MCP servers",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Return 401, not a tool error' doesn't look like the target's real title 'Lazy authentication for MCP servers' (token overlap 0.00)."
+    "compared_against": "Return 401, not a tool error",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/authentication",
     "anchor_text": "the troubleshooting entry",
     "href": "/docs/connectors/building/troubleshooting#microsoft-entra-id-rejects-the-resource-value",
     "resolved_target": "/connectors/building/troubleshooting",
+    "section_heading": "Microsoft Entra ID rejects the resource value",
     "real_title": "Troubleshooting connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.5,
-    "status": "OK"
+    "compared_against": "Microsoft Entra ID rejects the resource value",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'the troubleshooting entry' doesn't look like scraped section heading 'Microsoft Entra ID rejects the resource value' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/authentication",
@@ -1286,6 +1580,8 @@
     "resolved_target": "/connectors/building/troubleshooting",
     "real_title": "Troubleshooting connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Troubleshooting connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1296,6 +1592,8 @@
     "resolved_target": "/connectors/building/lazy-authentication",
     "real_title": "Lazy authentication for MCP servers",
     "real_title_source": "llms.txt",
+    "compared_against": "Lazy authentication for MCP servers",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1304,11 +1602,13 @@
     "anchor_text": "Authenticating with request headers",
     "href": "/docs/connectors/custom/remote-mcp#authenticating-with-request-headers",
     "resolved_target": "/connectors/custom/remote-mcp",
+    "section_heading": "Authenticating with request headers",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Authenticating with request headers' doesn't look like the target's real title 'Third party connectors with remote MCP' (token overlap 0.00)."
+    "compared_against": "Authenticating with request headers",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/directory-vs-custom",
@@ -1317,6 +1617,8 @@
     "resolved_target": "/connectors/building/mcp-apps/external-links",
     "real_title": "Opening external links from MCP Apps",
     "real_title_source": "llms.txt",
+    "compared_against": "Opening external links from MCP Apps",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -1327,6 +1629,8 @@
     "resolved_target": "/connectors/verification",
     "real_title": "Connector verification",
     "real_title_source": "llms.txt",
+    "compared_against": "Connector verification",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1335,22 +1639,28 @@
     "anchor_text": "cannot change afterward",
     "href": "/docs/connectors/building/after-publishing#slugs-are-permanent",
     "resolved_target": "/connectors/building/after-publishing",
+    "section_heading": "Slugs are permanent",
     "real_title": "Manage your listing after publishing",
     "real_title_source": "llms.txt",
+    "compared_against": "Slugs are permanent",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'cannot change afterward' doesn't look like the target's real title 'Manage your listing after publishing' (token overlap 0.00)."
+    "reason": "Anchor text 'cannot change afterward' doesn't look like scraped section heading 'Slugs are permanent' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/directory-vs-custom",
     "anchor_text": "`custom_connection`",
     "href": "/docs/connectors/building/authentication#supported-authentication-types",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Supported authentication types",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Supported authentication types",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text '`custom_connection`' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "reason": "Anchor text '`custom_connection`' doesn't look like scraped section heading 'Supported authentication types' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/directory-vs-custom",
@@ -1359,9 +1669,11 @@
     "resolved_target": "/connectors/building/submission",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting to the Connectors Directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.33,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'directory submission form' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.33)."
+    "reason": "Anchor text 'directory submission form' doesn't look like llms.txt 'Submitting to the Connectors Directory' (token overlap 0.33)."
   },
   {
     "source_page": "/connectors/building",
@@ -1370,6 +1682,8 @@
     "resolved_target": "/connectors/building/authentication",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Authentication for connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -1380,6 +1694,8 @@
     "resolved_target": "/connectors/building/what-to-build",
     "real_title": "What should I build: MCP, plugin, or both?",
     "real_title_source": "llms.txt",
+    "compared_against": "What should I build: MCP, plugin, or both?",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1388,11 +1704,13 @@
     "anchor_text": "callback URLs",
     "href": "/docs/connectors/building/authentication#callback-urls",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Callback URLs",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'callback URLs' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "compared_against": "Callback URLs",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/lazy-authentication",
@@ -1401,6 +1719,8 @@
     "resolved_target": "/connectors/building/enterprise-managed-auth",
     "real_title": "Enterprise Managed Auth for connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Enterprise Managed Auth for connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1411,6 +1731,8 @@
     "resolved_target": "/connectors/building/testing",
     "real_title": "Testing your connector",
     "real_title_source": "llms.txt",
+    "compared_against": "Testing your connector",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1421,6 +1743,8 @@
     "resolved_target": "/connectors/directory",
     "real_title": "Connectors directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1429,11 +1753,13 @@
     "anchor_text": "Before you start",
     "href": "/docs/connectors/building/submission#before-you-start",
     "resolved_target": "/connectors/building/submission",
+    "section_heading": "Before you start",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Before you start' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+    "compared_against": "Before you start",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/mcp-apps/external-links",
@@ -1442,6 +1768,8 @@
     "resolved_target": "/connectors/directory",
     "real_title": "Connectors directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1452,49 +1780,62 @@
     "resolved_target": "/connectors/building/submission",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting to the Connectors Directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'submit' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+    "reason": "Anchor text 'submit' doesn't look like llms.txt 'Submitting to the Connectors Directory' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/mcp-apps/instance-supersession",
     "anchor_text": "Cross-platform compatibility",
     "href": "/docs/connectors/building/mcp-apps/cross-compatibility#domain-handling",
     "resolved_target": "/connectors/building/mcp-apps/cross-compatibility",
+    "section_heading": "Domain handling",
     "real_title": "Building cross-platform MCP Apps",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.67,
-    "status": "OK"
+    "compared_against": "Domain handling",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Cross-platform compatibility' doesn't look like scraped section heading 'Domain handling' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/mcp-apps/transparent-theming",
     "anchor_text": "style variables",
     "href": "/docs/connectors/building/mcp-apps/design-guidelines#style-variables",
     "resolved_target": "/connectors/building/mcp-apps/design-guidelines",
+    "section_heading": "Style variables",
     "real_title": "Design guidelines",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'style variables' doesn't look like the target's real title 'Design guidelines' (token overlap 0.00)."
+    "compared_against": "Style variables",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/mcp-apps/transparent-theming",
     "anchor_text": "Style variables",
     "href": "/docs/connectors/building/mcp-apps/design-guidelines#style-variables",
     "resolved_target": "/connectors/building/mcp-apps/design-guidelines",
+    "section_heading": "Style variables",
     "real_title": "Design guidelines",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Style variables' doesn't look like the target's real title 'Design guidelines' (token overlap 0.00)."
+    "compared_against": "Style variables",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/mcp-apps/transparent-theming",
     "anchor_text": "Design guidelines: Style variables",
     "href": "/docs/connectors/building/mcp-apps/design-guidelines#style-variables",
     "resolved_target": "/connectors/building/mcp-apps/design-guidelines",
+    "section_heading": "Style variables",
     "real_title": "Design guidelines",
     "real_title_source": "llms.txt",
+    "compared_against": "Style variables",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1503,9 +1844,12 @@
     "anchor_text": "Visual design",
     "href": "/docs/connectors/building/mcp-apps/design-guidelines#visual-design",
     "resolved_target": "/connectors/building/mcp-apps/design-guidelines",
+    "section_heading": "Visual design",
     "real_title": "Design guidelines",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.5,
+    "compared_against": "Visual design",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
     "status": "OK"
   },
   {
@@ -1513,22 +1857,26 @@
     "anchor_text": "Domain handling",
     "href": "/docs/connectors/building/mcp-apps/cross-compatibility#domain-handling",
     "resolved_target": "/connectors/building/mcp-apps/cross-compatibility",
+    "section_heading": "Domain handling",
     "real_title": "Building cross-platform MCP Apps",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Domain handling' doesn't look like the target's real title 'Building cross-platform MCP Apps' (token overlap 0.00)."
+    "compared_against": "Domain handling",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/mcp-apps/troubleshooting",
     "anchor_text": "Domain handling",
     "href": "/docs/connectors/building/mcp-apps/cross-compatibility#domain-handling",
     "resolved_target": "/connectors/building/mcp-apps/cross-compatibility",
+    "section_heading": "Domain handling",
     "real_title": "Building cross-platform MCP Apps",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Domain handling' doesn't look like the target's real title 'Building cross-platform MCP Apps' (token overlap 0.00)."
+    "compared_against": "Domain handling",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/mcp",
@@ -1537,9 +1885,11 @@
     "resolved_target": "/connectors/building/submission",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting to the Connectors Directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'submit MCP servers' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+    "reason": "Anchor text 'submit MCP servers' doesn't look like llms.txt 'Submitting to the Connectors Directory' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/mcpb",
@@ -1548,6 +1898,8 @@
     "resolved_target": "/connectors/building/what-to-build",
     "real_title": "What should I build: MCP, plugin, or both?",
     "real_title_source": "llms.txt",
+    "compared_against": "What should I build: MCP, plugin, or both?",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1558,6 +1910,8 @@
     "resolved_target": "/connectors/building/submission",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting to the Connectors Directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.67,
     "status": "OK"
   },
@@ -1568,6 +1922,8 @@
     "resolved_target": "/connectors/building",
     "real_title": "Building custom connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Building custom connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1578,6 +1934,8 @@
     "resolved_target": "/connectors/building/submission",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting to the Connectors Directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1588,6 +1946,8 @@
     "resolved_target": "/connectors/verification",
     "real_title": "Connector verification",
     "real_title_source": "llms.txt",
+    "compared_against": "Connector verification",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -1596,11 +1956,13 @@
     "anchor_text": "Allowed link URIs",
     "href": "/docs/connectors/building/submission#allowed-link-uris",
     "resolved_target": "/connectors/building/submission",
+    "section_heading": "Allowed link URIs",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Allowed link URIs' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+    "compared_against": "Allowed link URIs",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/review-criteria",
@@ -1609,6 +1971,8 @@
     "resolved_target": "/connectors/building/testing",
     "real_title": "Testing your connector",
     "real_title_source": "llms.txt",
+    "compared_against": "Testing your connector",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -1619,6 +1983,8 @@
     "resolved_target": "/connectors/directory",
     "real_title": "Connectors directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1629,6 +1995,8 @@
     "resolved_target": "/connectors/building/mcp-apps/getting-started",
     "real_title": "Get started with MCP Apps",
     "real_title_source": "llms.txt",
+    "compared_against": "Get started with MCP Apps",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1639,6 +2007,8 @@
     "resolved_target": "/connectors/building/managing-your-listing",
     "real_title": "Managing your directory listing",
     "real_title_source": "llms.txt",
+    "compared_against": "Managing your directory listing",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1649,6 +2019,8 @@
     "resolved_target": "/connectors/building/review-criteria",
     "real_title": "Pre-submission checklist",
     "real_title_source": "llms.txt",
+    "compared_against": "Pre-submission checklist",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1659,6 +2031,8 @@
     "resolved_target": "/plugins/submit",
     "real_title": "Submitting your plugin",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting your plugin",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1669,20 +2043,24 @@
     "resolved_target": "/plugins/submit",
     "real_title": "Submitting your plugin",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting your plugin",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'plugins' doesn't look like the target's real title 'Submitting your plugin' (token overlap 0.00)."
+    "reason": "Anchor text 'plugins' doesn't look like llms.txt 'Submitting your plugin' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/submission",
     "anchor_text": "Servers with per-customer URLs",
     "href": "/docs/connectors/building/authentication#servers-with-per-customer-urls",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Servers with per-customer URLs",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Servers with per-customer URLs' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "compared_against": "Servers with per-customer URLs",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/submission",
@@ -1691,6 +2069,8 @@
     "resolved_target": "/connectors/building/authentication",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Authentication for connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1701,6 +2081,8 @@
     "resolved_target": "/connectors/building/managing-your-listing",
     "real_title": "Managing your directory listing",
     "real_title_source": "llms.txt",
+    "compared_against": "Managing your directory listing",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1709,22 +2091,27 @@
     "anchor_text": "endpoint latency",
     "href": "/docs/connectors/building/authentication#endpoint-latency",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Endpoint latency",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'endpoint latency' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "compared_against": "Endpoint latency",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/testing",
     "anchor_text": "firewall or WAF blocks Anthropic's traffic",
     "href": "/docs/connectors/building/troubleshooting#2-firewall-or-waf-blocks-anthropic%E2%80%99s-traffic",
     "resolved_target": "/connectors/building/troubleshooting",
+    "fragment_note": "Target page was scraped, but no H2-H6 heading's anchor slug matches fragment '2-firewall-or-waf-blocks-anthropic%E2%80%99s-traffic' (may target a definition-list term, bold inline text, or a manually-set HTML anchor id, none of which this checker extracts). Falling back to comparing anchor text against the page title.",
     "real_title": "Troubleshooting connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Troubleshooting connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text \"firewall or WAF blocks Anthropic's traffic\" doesn't look like the target's real title 'Troubleshooting connectors' (token overlap 0.00)."
+    "reason": "Anchor text \"firewall or WAF blocks Anthropic's traffic\" doesn't look like llms.txt 'Troubleshooting connectors' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/testing",
@@ -1733,6 +2120,8 @@
     "resolved_target": "/connectors/building/troubleshooting",
     "real_title": "Troubleshooting connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Troubleshooting connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1741,31 +2130,39 @@
     "anchor_text": "test a local server",
     "href": "/docs/connectors/building/testing#test-a-local-server",
     "resolved_target": "/connectors/building/testing",
+    "section_heading": "Test a local server",
     "real_title": "Testing your connector",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'test a local server' doesn't look like the target's real title 'Testing your connector' (token overlap 0.00)."
+    "compared_against": "Test a local server",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/troubleshooting",
     "anchor_text": "Client ID Metadata Documents",
     "href": "/docs/connectors/building/authentication#dcr-and-cimd-details",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "DCR and CIMD details",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "DCR and CIMD details",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Client ID Metadata Documents' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "reason": "Anchor text 'Client ID Metadata Documents' doesn't look like scraped section heading 'DCR and CIMD details' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/building/troubleshooting",
     "anchor_text": "supported authentication types",
     "href": "/docs/connectors/building/authentication#supported-authentication-types",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Supported authentication types",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.5,
+    "compared_against": "Supported authentication types",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
     "status": "OK"
   },
   {
@@ -1773,44 +2170,52 @@
     "anchor_text": "cross-host authorization servers",
     "href": "/docs/connectors/building/authentication#cross-host-authorization-servers",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Cross-host authorization servers",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'cross-host authorization servers' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "compared_against": "Cross-host authorization servers",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/troubleshooting",
     "anchor_text": "token refresh",
     "href": "/docs/connectors/building/authentication#token-refresh",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Token refresh",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'token refresh' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "compared_against": "Token refresh",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/troubleshooting",
     "anchor_text": "endpoint latency",
     "href": "/docs/connectors/building/authentication#endpoint-latency",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Endpoint latency",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'endpoint latency' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "compared_against": "Endpoint latency",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/building/troubleshooting",
     "anchor_text": "cross-host authorization servers",
     "href": "/docs/connectors/building/authentication#cross-host-authorization-servers",
     "resolved_target": "/connectors/building/authentication",
+    "section_heading": "Cross-host authorization servers",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'cross-host authorization servers' doesn't look like the target's real title 'Authentication for connectors' (token overlap 0.00)."
+    "compared_against": "Cross-host authorization servers",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/custom/remote-mcp",
@@ -1819,6 +2224,8 @@
     "resolved_target": "/connectors/directory",
     "real_title": "Connectors directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1829,6 +2236,8 @@
     "resolved_target": "/connectors/verification",
     "real_title": "Connector verification",
     "real_title_source": "llms.txt",
+    "compared_against": "Connector verification",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1839,6 +2248,8 @@
     "resolved_target": "/connectors/building/authentication",
     "real_title": "Authentication for connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Authentication for connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1849,6 +2260,8 @@
     "resolved_target": "/connectors/building/mcp",
     "real_title": "Model Context Protocol (MCP)",
     "real_title_source": "llms.txt",
+    "compared_against": "Model Context Protocol (MCP)",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1859,6 +2272,8 @@
     "resolved_target": "/connectors/verification",
     "real_title": "Connector verification",
     "real_title_source": "llms.txt",
+    "compared_against": "Connector verification",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1869,6 +2284,8 @@
     "resolved_target": "/connectors/building/directory-vs-custom",
     "real_title": "Directory connectors vs custom connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Directory connectors vs custom connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1879,20 +2296,24 @@
     "resolved_target": "/connectors/building/submission",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting to the Connectors Directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'submission guidelines' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+    "reason": "Anchor text 'submission guidelines' doesn't look like llms.txt 'Submitting to the Connectors Directory' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/directory",
     "anchor_text": "Before you start",
     "href": "/docs/connectors/building/submission#before-you-start",
     "resolved_target": "/connectors/building/submission",
+    "section_heading": "Before you start",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Before you start' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+    "compared_against": "Before you start",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/directory",
@@ -1901,6 +2322,8 @@
     "resolved_target": "/connectors/building/managing-your-listing",
     "real_title": "Managing your directory listing",
     "real_title_source": "llms.txt",
+    "compared_against": "Managing your directory listing",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1911,6 +2334,8 @@
     "resolved_target": "/connectors/getting-started",
     "real_title": "Get started with connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Get started with connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1921,6 +2346,8 @@
     "resolved_target": "/connectors/getting-started",
     "real_title": "Get started with connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Get started with connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1929,32 +2356,41 @@
     "anchor_text": "Set up an MCP tunnel",
     "href": "/docs/connectors/mcp-tunnels/setup#add-tunneled-servers-as-connectors",
     "resolved_target": "/connectors/mcp-tunnels/setup",
+    "section_heading": "Add tunneled servers as connectors",
     "real_title": "Set up an MCP tunnel",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 1.0,
-    "status": "OK"
+    "compared_against": "Add tunneled servers as connectors",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 0.0,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Set up an MCP tunnel' doesn't look like scraped section heading 'Add tunneled servers as connectors' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/mcp-tunnels/oauth",
     "anchor_text": "Add more servers later",
     "href": "/docs/connectors/mcp-tunnels/setup#add-more-servers-later",
     "resolved_target": "/connectors/mcp-tunnels/setup",
+    "section_heading": "Add more servers later",
     "real_title": "Set up an MCP tunnel",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Add more servers later' doesn't look like the target's real title 'Set up an MCP tunnel' (token overlap 0.00)."
+    "compared_against": "Add more servers later",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/mcp-tunnels/oauth",
     "anchor_text": "Troubleshooting",
     "href": "/docs/connectors/mcp-tunnels/troubleshooting#sign-in-redirects-to-a-tunnel-address-that-does-not-load",
     "resolved_target": "/connectors/mcp-tunnels/troubleshooting",
+    "section_heading": "Sign-in redirects to a tunnel address that does not load",
     "real_title": "Troubleshoot MCP tunnels",
     "real_title_source": "llms.txt",
+    "compared_against": "Sign-in redirects to a tunnel address that does not load",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Troubleshooting' doesn't look like the target's real title 'Troubleshoot MCP tunnels' (token overlap 0.00)."
+    "reason": "Anchor text 'Troubleshooting' doesn't look like scraped section heading 'Sign-in redirects to a tunnel address that does not load' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/mcp-tunnels/overview",
@@ -1963,6 +2399,8 @@
     "resolved_target": "/connectors/building/mcp",
     "real_title": "Model Context Protocol (MCP)",
     "real_title_source": "llms.txt",
+    "compared_against": "Model Context Protocol (MCP)",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -1973,6 +2411,8 @@
     "resolved_target": "/connectors/custom/remote-mcp",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
+    "compared_against": "Third party connectors with remote MCP",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -1983,9 +2423,11 @@
     "resolved_target": "/connectors/custom/remote-mcp",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
+    "compared_against": "Third party connectors with remote MCP",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'custom connector' doesn't look like the target's real title 'Third party connectors with remote MCP' (token overlap 0.00)."
+    "reason": "Anchor text 'custom connector' doesn't look like llms.txt 'Third party connectors with remote MCP' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/mcp-tunnels/overview",
@@ -1994,6 +2436,8 @@
     "resolved_target": "/connectors/mcp-tunnels/oauth",
     "real_title": "Authenticate to MCP servers behind a tunnel",
     "real_title_source": "llms.txt",
+    "compared_against": "Authenticate to MCP servers behind a tunnel",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2002,11 +2446,13 @@
     "anchor_text": "Rotate credentials",
     "href": "/docs/connectors/mcp-tunnels/setup#rotate-credentials",
     "resolved_target": "/connectors/mcp-tunnels/setup",
+    "section_heading": "Rotate credentials",
     "real_title": "Set up an MCP tunnel",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Rotate credentials' doesn't look like the target's real title 'Set up an MCP tunnel' (token overlap 0.00)."
+    "compared_against": "Rotate credentials",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/mcp-tunnels/setup",
@@ -2015,6 +2461,8 @@
     "resolved_target": "/connectors/mcp-tunnels/overview",
     "real_title": "MCP tunnels",
     "real_title_source": "llms.txt",
+    "compared_against": "MCP tunnels",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2023,33 +2471,42 @@
     "anchor_text": "Troubleshooting",
     "href": "/docs/connectors/mcp-tunnels/troubleshooting#proxy-logs-ip-validation-failed",
     "resolved_target": "/connectors/mcp-tunnels/troubleshooting",
+    "section_heading": "Proxy logs IP validation failed",
     "real_title": "Troubleshoot MCP tunnels",
     "real_title_source": "llms.txt",
+    "compared_against": "Proxy logs IP validation failed",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Troubleshooting' doesn't look like the target's real title 'Troubleshoot MCP tunnels' (token overlap 0.00)."
+    "reason": "Anchor text 'Troubleshooting' doesn't look like scraped section heading 'Proxy logs IP validation failed' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/mcp-tunnels/setup",
     "anchor_text": "Troubleshooting",
     "href": "/docs/connectors/mcp-tunnels/troubleshooting#helm-install-fails-with-a-hook-error",
     "resolved_target": "/connectors/mcp-tunnels/troubleshooting",
+    "section_heading": "Helm install fails with a hook error",
     "real_title": "Troubleshoot MCP tunnels",
     "real_title_source": "llms.txt",
+    "compared_against": "Helm install fails with a hook error",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Troubleshooting' doesn't look like the target's real title 'Troubleshoot MCP tunnels' (token overlap 0.00)."
+    "reason": "Anchor text 'Troubleshooting' doesn't look like scraped section heading 'Helm install fails with a hook error' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/mcp-tunnels/setup",
     "anchor_text": "Troubleshooting",
     "href": "/docs/connectors/mcp-tunnels/troubleshooting#the-tunnel-stack-starts-but-cloudflared-never-connects",
     "resolved_target": "/connectors/mcp-tunnels/troubleshooting",
+    "section_heading": "The tunnel stack starts but cloudflared never connects",
     "real_title": "Troubleshoot MCP tunnels",
     "real_title_source": "llms.txt",
+    "compared_against": "The tunnel stack starts but cloudflared never connects",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Troubleshooting' doesn't look like the target's real title 'Troubleshoot MCP tunnels' (token overlap 0.00)."
+    "reason": "Anchor text 'Troubleshooting' doesn't look like scraped section heading 'The tunnel stack starts but cloudflared never connects' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/mcp-tunnels/setup",
@@ -2058,6 +2515,8 @@
     "resolved_target": "/connectors/mcp-tunnels/oauth",
     "real_title": "Authenticate to MCP servers behind a tunnel",
     "real_title_source": "llms.txt",
+    "compared_against": "Authenticate to MCP servers behind a tunnel",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2066,10 +2525,14 @@
     "anchor_text": "Third party connectors with remote MCP",
     "href": "/docs/connectors/custom/remote-mcp#adding-custom-connectors",
     "resolved_target": "/connectors/custom/remote-mcp",
+    "section_heading": "Adding custom connectors",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 1.0,
-    "status": "OK"
+    "compared_against": "Adding custom connectors",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 0.33,
+    "status": "ANCHOR_MISMATCH",
+    "reason": "Anchor text 'Third party connectors with remote MCP' doesn't look like scraped section heading 'Adding custom connectors' (token overlap 0.33)."
   },
   {
     "source_page": "/connectors/mcp-tunnels/troubleshooting",
@@ -2078,6 +2541,8 @@
     "resolved_target": "/connectors/mcp-tunnels/overview",
     "real_title": "MCP tunnels",
     "real_title_source": "llms.txt",
+    "compared_against": "MCP tunnels",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -2086,9 +2551,12 @@
     "anchor_text": "Remove a tunnel",
     "href": "/docs/connectors/mcp-tunnels/setup#remove-a-tunnel",
     "resolved_target": "/connectors/mcp-tunnels/setup",
+    "section_heading": "Remove a tunnel",
     "real_title": "Set up an MCP tunnel",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.5,
+    "compared_against": "Remove a tunnel",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
     "status": "OK"
   },
   {
@@ -2096,22 +2564,26 @@
     "anchor_text": "Rotate credentials",
     "href": "/docs/connectors/mcp-tunnels/setup#rotate-credentials",
     "resolved_target": "/connectors/mcp-tunnels/setup",
+    "section_heading": "Rotate credentials",
     "real_title": "Set up an MCP tunnel",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Rotate credentials' doesn't look like the target's real title 'Set up an MCP tunnel' (token overlap 0.00)."
+    "compared_against": "Rotate credentials",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/mcp-tunnels/troubleshooting",
     "anchor_text": "Verify the connection",
     "href": "/docs/connectors/mcp-tunnels/setup#verify-the-connection",
     "resolved_target": "/connectors/mcp-tunnels/setup",
+    "section_heading": "Verify the connection",
     "real_title": "Set up an MCP tunnel",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Verify the connection' doesn't look like the target's real title 'Set up an MCP tunnel' (token overlap 0.00)."
+    "compared_against": "Verify the connection",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/mcp-tunnels/troubleshooting",
@@ -2120,6 +2592,8 @@
     "resolved_target": "/connectors/mcp-tunnels/oauth",
     "real_title": "Authenticate to MCP servers behind a tunnel",
     "real_title_source": "llms.txt",
+    "compared_against": "Authenticate to MCP servers behind a tunnel",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2128,22 +2602,26 @@
     "anchor_text": "OAuth page",
     "href": "/docs/connectors/mcp-tunnels/oauth#set-the-tunnel-oauth-configuration",
     "resolved_target": "/connectors/mcp-tunnels/oauth",
+    "section_heading": "Set the Tunnel OAuth configuration",
     "real_title": "Authenticate to MCP servers behind a tunnel",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'OAuth page' doesn't look like the target's real title 'Authenticate to MCP servers behind a tunnel' (token overlap 0.00)."
+    "compared_against": "Set the Tunnel OAuth configuration",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 0.5,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/mcp-tunnels/troubleshooting",
     "anchor_text": "Route the authorization server through the tunnel",
     "href": "/docs/connectors/mcp-tunnels/oauth#route-the-authorization-server-through-the-tunnel",
     "resolved_target": "/connectors/mcp-tunnels/oauth",
+    "section_heading": "Route the authorization server through the tunnel",
     "real_title": "Authenticate to MCP servers behind a tunnel",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.2,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Route the authorization server through the tunnel' doesn't look like the target's real title 'Authenticate to MCP servers behind a tunnel' (token overlap 0.20)."
+    "compared_against": "Route the authorization server through the tunnel",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/overview",
@@ -2152,6 +2630,8 @@
     "resolved_target": "/connectors/building/mcp",
     "real_title": "Model Context Protocol (MCP)",
     "real_title_source": "llms.txt",
+    "compared_against": "Model Context Protocol (MCP)",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2162,6 +2642,8 @@
     "resolved_target": "/connectors/building/mcp-apps/getting-started",
     "real_title": "Get started with MCP Apps",
     "real_title_source": "llms.txt",
+    "compared_against": "Get started with MCP Apps",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2172,6 +2654,8 @@
     "resolved_target": "/connectors/building/what-to-build",
     "real_title": "What should I build: MCP, plugin, or both?",
     "real_title_source": "llms.txt",
+    "compared_against": "What should I build: MCP, plugin, or both?",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2182,6 +2666,8 @@
     "resolved_target": "/connectors/getting-started",
     "real_title": "Get started with connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Get started with connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -2192,6 +2678,8 @@
     "resolved_target": "/connectors/custom/remote-mcp",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
+    "compared_against": "Third party connectors with remote MCP",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.67,
     "status": "OK"
   },
@@ -2202,6 +2690,8 @@
     "resolved_target": "/connectors/building/mcp-apps/getting-started",
     "real_title": "Get started with MCP Apps",
     "real_title_source": "llms.txt",
+    "compared_against": "Get started with MCP Apps",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2212,6 +2702,8 @@
     "resolved_target": "/connectors/building/mcp-apps/design-guidelines",
     "real_title": "Design guidelines",
     "real_title_source": "llms.txt",
+    "compared_against": "Design guidelines",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2222,6 +2714,8 @@
     "resolved_target": "/connectors/building/mcp-apps/cross-compatibility",
     "real_title": "Building cross-platform MCP Apps",
     "real_title_source": "llms.txt",
+    "compared_against": "Building cross-platform MCP Apps",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.67,
     "status": "OK"
   },
@@ -2232,9 +2726,11 @@
     "resolved_target": "/connectors/custom/desktop-extensions",
     "real_title": "Desktop extensions",
     "real_title_source": "llms.txt",
+    "compared_against": "Desktop extensions",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'MCP Bundles (MCPB)' doesn't look like the target's real title 'Desktop extensions' (token overlap 0.00)."
+    "reason": "Anchor text 'MCP Bundles (MCPB)' doesn't look like llms.txt 'Desktop extensions' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/overview",
@@ -2243,6 +2739,8 @@
     "resolved_target": "/connectors/building/mcpb",
     "real_title": "Build a desktop extension with MCPB",
     "real_title_source": "llms.txt",
+    "compared_against": "Build a desktop extension with MCPB",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2253,9 +2751,11 @@
     "resolved_target": "/plugins/overview",
     "real_title": "Plugins overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Plugins overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'plugin' doesn't look like the target's real title 'Plugins overview' (token overlap 0.00)."
+    "reason": "Anchor text 'plugin' doesn't look like llms.txt 'Plugins overview' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/overview",
@@ -2264,6 +2764,8 @@
     "resolved_target": "/plugins/submit",
     "real_title": "Submitting your plugin",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting your plugin",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -2274,6 +2776,8 @@
     "resolved_target": "/connectors/directory",
     "real_title": "Connectors directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2284,6 +2788,8 @@
     "resolved_target": "/connectors/verification",
     "real_title": "Connector verification",
     "real_title_source": "llms.txt",
+    "compared_against": "Connector verification",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2294,6 +2800,8 @@
     "resolved_target": "/connectors/custom/remote-mcp",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
+    "compared_against": "Third party connectors with remote MCP",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2304,6 +2812,8 @@
     "resolved_target": "/connectors/custom/desktop-extensions",
     "real_title": "Desktop extensions",
     "real_title_source": "llms.txt",
+    "compared_against": "Desktop extensions",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2314,6 +2824,8 @@
     "resolved_target": "/plugins/overview",
     "real_title": "Plugins overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Plugins overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2324,6 +2836,8 @@
     "resolved_target": "/skills/overview",
     "real_title": "Skills overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Skills overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2334,6 +2848,8 @@
     "resolved_target": "/plugins/submit",
     "real_title": "Submitting your plugin",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting your plugin",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -2344,6 +2860,8 @@
     "resolved_target": "/claude-tag/overview",
     "real_title": "Work with Claude Tag",
     "real_title_source": "llms.txt",
+    "compared_against": "Work with Claude Tag",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2354,6 +2872,8 @@
     "resolved_target": "/claude-tag/admins/migrate-from-earlier",
     "real_title": "Migrate from the earlier Claude in Slack",
     "real_title_source": "llms.txt",
+    "compared_against": "Migrate from the earlier Claude in Slack",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2364,6 +2884,8 @@
     "resolved_target": "/connectors/directory",
     "real_title": "Connectors directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2374,6 +2896,8 @@
     "resolved_target": "/connectors/custom/remote-mcp",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
+    "compared_against": "Third party connectors with remote MCP",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -2384,6 +2908,8 @@
     "resolved_target": "/connectors/building/directory-vs-custom",
     "real_title": "Directory connectors vs custom connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Directory connectors vs custom connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2392,11 +2918,13 @@
     "anchor_text": "security and privacy",
     "href": "/docs/connectors/custom/remote-mcp#security-and-privacy",
     "resolved_target": "/connectors/custom/remote-mcp",
+    "section_heading": "Security and privacy",
     "real_title": "Third party connectors with remote MCP",
     "real_title_source": "llms.txt",
-    "anchor_title_similarity": 0.0,
-    "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'security and privacy' doesn't look like the target's real title 'Third party connectors with remote MCP' (token overlap 0.00)."
+    "compared_against": "Security and privacy",
+    "compared_against_source": "scraped section heading",
+    "anchor_title_similarity": 1.0,
+    "status": "OK"
   },
   {
     "source_page": "/connectors/verification",
@@ -2405,9 +2933,11 @@
     "resolved_target": "/connectors/building/review-criteria",
     "real_title": "Pre-submission checklist",
     "real_title_source": "llms.txt",
+    "compared_against": "Pre-submission checklist",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'review criteria' doesn't look like the target's real title 'Pre-submission checklist' (token overlap 0.00)."
+    "reason": "Anchor text 'review criteria' doesn't look like llms.txt 'Pre-submission checklist' (token overlap 0.00)."
   },
   {
     "source_page": "/connectors/verification",
@@ -2416,9 +2946,11 @@
     "resolved_target": "/connectors/building/submission",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting to the Connectors Directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'submission guidelines' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+    "reason": "Anchor text 'submission guidelines' doesn't look like llms.txt 'Submitting to the Connectors Directory' (token overlap 0.00)."
   },
   {
     "source_page": "/cowork/guide/plugins",
@@ -2451,6 +2983,8 @@
     "resolved_target": "/plugins/overview",
     "real_title": "Plugins overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Plugins overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2461,6 +2995,8 @@
     "resolved_target": "/plugins/submit",
     "real_title": "Submitting your plugin",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting your plugin",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -2483,6 +3019,8 @@
     "resolved_target": "/plugins/overview",
     "real_title": "Plugins overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Plugins overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2493,9 +3031,11 @@
     "resolved_target": "/connectors/overview",
     "real_title": "Connectors overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'MCP server' doesn't look like the target's real title 'Connectors overview' (token overlap 0.00)."
+    "reason": "Anchor text 'MCP server' doesn't look like llms.txt 'Connectors overview' (token overlap 0.00)."
   },
   {
     "source_page": "/government/desktop/skills",
@@ -2504,6 +3044,8 @@
     "resolved_target": "/skills/overview",
     "real_title": "Skills overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Skills overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2514,6 +3056,8 @@
     "resolved_target": "/government/desktop/plugins",
     "real_title": "Plugins in Claude Desktop",
     "real_title_source": "llms.txt",
+    "compared_against": "Plugins in Claude Desktop",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2524,9 +3068,11 @@
     "resolved_target": "/skills/how-to",
     "real_title": "Creating custom skills",
     "real_title_source": "llms.txt",
+    "compared_against": "Creating custom skills",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'skill authoring guide' doesn't look like the target's real title 'Creating custom skills' (token overlap 0.00)."
+    "reason": "Anchor text 'skill authoring guide' doesn't look like llms.txt 'Creating custom skills' (token overlap 0.00)."
   },
   {
     "source_page": "/government/desktop/skills",
@@ -2535,6 +3081,8 @@
     "resolved_target": "/government/config/plugins-and-connectors",
     "real_title": "Manage plugins and connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Manage plugins and connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2543,11 +3091,14 @@
     "anchor_text": "Plugin archive formats",
     "href": "/docs/government/config/plugins-and-connectors#plugin-archive-formats",
     "resolved_target": "/government/config/plugins-and-connectors",
+    "fragment_note": "Target page '/government/config/plugins-and-connectors' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Manage plugins and connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Manage plugins and connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Plugin archive formats' doesn't look like the target's real title 'Manage plugins and connectors' (token overlap 0.00)."
+    "reason": "Anchor text 'Plugin archive formats' doesn't look like llms.txt 'Manage plugins and connectors' (token overlap 0.00)."
   },
   {
     "source_page": "/government/desktop/skills",
@@ -2556,42 +3107,53 @@
     "resolved_target": "/skills/how-to",
     "real_title": "Creating custom skills",
     "real_title_source": "llms.txt",
+    "compared_against": "Creating custom skills",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'skill authoring guide' doesn't look like the target's real title 'Creating custom skills' (token overlap 0.00)."
+    "reason": "Anchor text 'skill authoring guide' doesn't look like llms.txt 'Creating custom skills' (token overlap 0.00)."
   },
   {
     "source_page": "/government/desktop/skills",
     "anchor_text": "Plugin archive formats",
     "href": "/docs/government/config/plugins-and-connectors#plugin-archive-formats",
     "resolved_target": "/government/config/plugins-and-connectors",
+    "fragment_note": "Target page '/government/config/plugins-and-connectors' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Manage plugins and connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Manage plugins and connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Plugin archive formats' doesn't look like the target's real title 'Manage plugins and connectors' (token overlap 0.00)."
+    "reason": "Anchor text 'Plugin archive formats' doesn't look like llms.txt 'Manage plugins and connectors' (token overlap 0.00)."
   },
   {
     "source_page": "/government/desktop/skills",
     "anchor_text": "Plugins that run code",
     "href": "/docs/government/config/plugins-and-connectors#plugins-that-run-code",
     "resolved_target": "/government/config/plugins-and-connectors",
+    "fragment_note": "Target page '/government/config/plugins-and-connectors' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Manage plugins and connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Manage plugins and connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.33,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Plugins that run code' doesn't look like the target's real title 'Manage plugins and connectors' (token overlap 0.33)."
+    "reason": "Anchor text 'Plugins that run code' doesn't look like llms.txt 'Manage plugins and connectors' (token overlap 0.33)."
   },
   {
     "source_page": "/government/desktop/skills",
     "anchor_text": "Update or remove a plugin",
     "href": "/docs/government/config/plugins-and-connectors#update-or-remove-a-plugin",
     "resolved_target": "/government/config/plugins-and-connectors",
+    "fragment_note": "Target page '/government/config/plugins-and-connectors' wasn't one of the 50 scraped pages, so no section-heading data exists for it here; falling back to comparing anchor text against the page title, the same as a fragment-less link.",
     "real_title": "Manage plugins and connectors",
     "real_title_source": "llms.txt",
+    "compared_against": "Manage plugins and connectors",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'Update or remove a plugin' doesn't look like the target's real title 'Manage plugins and connectors' (token overlap 0.00)."
+    "reason": "Anchor text 'Update or remove a plugin' doesn't look like llms.txt 'Manage plugins and connectors' (token overlap 0.00)."
   },
   {
     "source_page": "/office-agents/connectors-and-skills",
@@ -2600,6 +3162,8 @@
     "resolved_target": "/office-agents/third-party-platforms",
     "real_title": "Use Claude for M365 with third-party platforms",
     "real_title_source": "llms.txt",
+    "compared_against": "Use Claude for M365 with third-party platforms",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2610,6 +3174,8 @@
     "resolved_target": "/office-agents/excel",
     "real_title": "Use Claude for Excel",
     "real_title_source": "llms.txt",
+    "compared_against": "Use Claude for Excel",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2620,6 +3186,8 @@
     "resolved_target": "/office-agents/powerpoint",
     "real_title": "Use Claude for PowerPoint",
     "real_title_source": "llms.txt",
+    "compared_against": "Use Claude for PowerPoint",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2630,6 +3198,8 @@
     "resolved_target": "/office-agents/word",
     "real_title": "Use Claude for Word",
     "real_title_source": "llms.txt",
+    "compared_against": "Use Claude for Word",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2640,6 +3210,8 @@
     "resolved_target": "/office-agents/outlook",
     "real_title": "Use Claude for Outlook",
     "real_title_source": "llms.txt",
+    "compared_against": "Use Claude for Outlook",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2650,6 +3222,8 @@
     "resolved_target": "/connectors/overview",
     "real_title": "Connectors overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 0.5,
     "status": "OK"
   },
@@ -2660,6 +3234,8 @@
     "resolved_target": "/skills/overview",
     "real_title": "Skills overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Skills overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2668,8 +3244,11 @@
     "anchor_text": "Submitting your plugin",
     "href": "/docs/plugins/submit#submitting-your-plugin",
     "resolved_target": "/plugins/submit",
+    "section_heading": "Submitting your plugin",
     "real_title": "Submitting your plugin",
     "real_title_source": "llms.txt",
+    "compared_against": "Submitting your plugin",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2680,6 +3259,8 @@
     "resolved_target": "/connectors/directory",
     "real_title": "Connectors directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2690,6 +3271,8 @@
     "resolved_target": "/connectors/directory",
     "real_title": "Connectors directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Connectors directory",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2698,11 +3281,14 @@
     "anchor_text": "connector submission access requirements",
     "href": "/docs/connectors/building/submission#before-you-start",
     "resolved_target": "/connectors/building/submission",
+    "section_heading": "Before you start",
     "real_title": "Submitting to the Connectors Directory",
     "real_title_source": "llms.txt",
+    "compared_against": "Before you start",
+    "compared_against_source": "scraped section heading",
     "anchor_title_similarity": 0.0,
     "status": "ANCHOR_MISMATCH",
-    "reason": "Anchor text 'connector submission access requirements' doesn't look like the target's real title 'Submitting to the Connectors Directory' (token overlap 0.00)."
+    "reason": "Anchor text 'connector submission access requirements' doesn't look like scraped section heading 'Before you start' (token overlap 0.00)."
   },
   {
     "source_page": "/skills/overview",
@@ -2711,6 +3297,8 @@
     "resolved_target": "/plugins/overview",
     "real_title": "Plugins overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Plugins overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2721,6 +3309,8 @@
     "resolved_target": "/skills/how-to",
     "real_title": "Creating custom skills",
     "real_title_source": "llms.txt",
+    "compared_against": "Creating custom skills",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   },
@@ -2731,6 +3321,8 @@
     "resolved_target": "/plugins/overview",
     "real_title": "Plugins overview",
     "real_title_source": "llms.txt",
+    "compared_against": "Plugins overview",
+    "compared_against_source": "llms.txt",
     "anchor_title_similarity": 1.0,
     "status": "OK"
   }
