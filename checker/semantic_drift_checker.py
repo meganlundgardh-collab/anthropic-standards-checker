@@ -111,8 +111,26 @@ SURFACE_PAGES = [
 # simple English pattern, not a markdown/AST parser -- it will miss a
 # definition phrased unusually, and that's a disclosed limitation (see the
 # README), not a bug to quietly patch away.
+#
+# Second alternative, added after a hand sweep of all 9 surface pages found
+# a real miss: claude-tag/admins/customize.md has an H3 section titled
+# "### Channel connections are separate from personal connectors" -- a
+# genuine, on-topic distinction between Claude Tag's "connection" and the
+# canonical "connector" that the article-only pattern above can't see,
+# because "Channel" sits where "a"/"an" would need to be. Deliberately
+# narrow, not just "any word before the primitive": anchored to the start
+# of the sentence (`^`, checked per-sentence since DEFINITION_RE is run on
+# one split_sentences() output at a time) and restricted to the plural
+# "are" form only. Both restrictions matter -- a hand sweep of near-miss
+# phrases on these same 9 pages found several that look similar but are
+# clearly NOT definitions ("Each connection is listed in the bundle...",
+# "This plugin is required by your organization..."), and both happen to
+# be singular "is" with a determiner ("Each", "This") rather than a
+# category-level plural claim; requiring "are" and forbidding a mid-sentence
+# match keeps those out without a denylist of determiners to maintain.
 DEFINITION_RE = re.compile(
-    r"\b[Aa]n?\s+(plugin|skill|connector|connection)s?\s+(?:is|are|bundles?|adds?|extends?)\b"
+    r"(?:\b[Aa]n?\s+(plugin|skill|connector|connection)s?\s+(?:is|are|bundles?|adds?|extends?)\b)"
+    r"|(?:^[A-Z][a-z]+\s+(plugin|skill|connector|connection)s\s+are\b)"
 )
 
 
@@ -192,7 +210,7 @@ def find_definition_candidates(block: str):
     for sentence in split_sentences(block):
         m = DEFINITION_RE.search(sentence)
         if m:
-            candidates.append((m.group(1).lower(), sentence))
+            candidates.append(((m.group(1) or m.group(2)).lower(), sentence))
     return candidates
 
 
@@ -235,6 +253,18 @@ def find_definition_candidates_with_context(text: str):
             sections.append((heading, buf))
             heading = line[3:].strip()
             buf = []
+        elif re.match(r"^#{3,6}\s+", line):
+            # An H3-H6 heading (e.g. "### Channel connections are separate
+            # from personal connectors") only ends a *section* on H2; deeper
+            # headings stay inside the current section's body. But left with
+            # its literal "###" marker, a heading like that becomes its own
+            # blank-line-separated paragraph (see the paragraph split below)
+            # whose text starts with "###" -- which breaks DEFINITION_RE's
+            # sentence-start anchor for the modifier-noun branch, and would
+            # read strangely in a Stage B prompt either way. Strip the
+            # marker so the heading is handled as plain prose, the same as
+            # every other sentence on the page.
+            buf.append(re.sub(r"^#{3,6}\s+", "", line))
         else:
             buf.append(line)
     sections.append((heading, buf))
@@ -254,7 +284,7 @@ def find_definition_candidates_with_context(text: str):
                 if m:
                     candidates.append(
                         {
-                            "primitive": m.group(1).lower(),
+                            "primitive": (m.group(1) or m.group(2)).lower(),
                             "sentence": sentence,
                             "section_heading": heading,
                             "paragraph_context": " ".join(para_sentences),
