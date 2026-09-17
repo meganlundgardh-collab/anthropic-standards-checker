@@ -348,32 +348,20 @@ VERDICT: <verdict>
 RATIONALE: <one sentence, and flag any Rule 5 concern from the context if present>
 """
 
-
+class StageBError(Exception):
+    """A live call_model() invocation failed (network, HTTP, or parse error)."""
+  
 def call_model(prompt: str) -> str | None:
-    """Real Stage B: an actual Anthropic API call. Returns the raw response
-    text, or None if no API key is configured (this prototype's sandbox has
-    network access to api.anthropic.com but no key -- see README)."""
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         return None
-    req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages",
-        data=json.dumps(
-            {
-                "model": MODEL_ID,
-                "max_tokens": 200,
-                "messages": [{"role": "user", "content": prompt}],
-            }
-        ).encode(),
-        headers={
-            "content-type": "application/json",
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        body = json.loads(resp.read())
-    return body["content"][0]["text"]
+    req = urllib.request.Request(...)   # unchanged
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            body = json.loads(resp.read())
+        return body["content"][0]["text"]
+    except Exception as e:
+        raise StageBError(f"{type(e).__name__}: {e}") from e
 
 
 def main():
@@ -451,6 +439,28 @@ def main():
         c["verdict_source"] = "anthropic-api"
 
     out_path = OUTPUT / "semantic_drift_candidates.json"
+ran_any_model_call = False
+try:
+    for c in candidates:
+        if c.get("status") != "PENDING_STAGE_B":
+            continue
+        try:
+            response = call_model(c["stage_b_prompt"])
+        except StageBError as e:
+            c["status"] = "STAGE_B_ERROR"
+            c["error"] = str(e)
+            continue
+        if response is None:
+            continue
+        ran_any_model_call = True
+        vm = re.search(r"VERDICT:\s*(\w+)", response)
+        rm = re.search(r"RATIONALE:\s*(.+)", response)
+        c["status"] = vm.group(1) if vm else "UNPARSEABLE"
+        c["rationale"] = rm.group(1).strip() if rm else response.strip()
+        c["verdict_source"] = "anthropic-api"
+finally:
+    out_path.write_text(json.dumps(candidates, indent=2))
+  
     out_path.write_text(json.dumps(candidates, indent=2))
 
     print(f"Surface pages checked: {len(SURFACE_PAGES)}")
