@@ -1,0 +1,31 @@
+# Part 3 — Checker Prototypes
+
+**Overview:** Two automated checkers enforcing Part 2's style guide, run against the 50-page audited slice (Skills, Plugins, Connectors, and 9 surface pages)[cite: 5]. 
+
+**Data Pipeline:** The ground-truth page index is a union of two independent sources (`llms.txt` and `sitemap.xml`). Relying on either one alone would have caused false positives; the checker cross-references both and relies on a manually verified override list where the indexes disagree[cite: 5]. *(Note: Scraping was WebFetch-based due to sandbox outbound network constraints[cite: 5]).*
+
+-----
+## Module 1: Link Checker (`link_checker.py`)
+A deterministic Python module enforcing Rule 3. It extracts internal links and validates resolution and anchor-text accuracy[cite: 5].
+
+**Engineering Decisions:**
+*   **Anchor similarity refinement:** Initially, I used Jaccard similarity, which produced an artificially high 35% mismatch rate by heavily penalizing accurate, short anchors pointing to long page titles[cite: 5]. I switched to an Overlap Coefficient (`|A ∩ B| / min(|A|, |B|)`), which correctly scored these as matches and cut the noise rate in half[cite: 5]. This was a deliberate, principled fix, not just tuning to the sample[cite: 5].
+*   **Fragment resolution:** I realized the initial regex was silently dropping fragment links (`#section`), which made up over a third of the internal links[cite: 6]. I widened the extraction and added GitHub-style slugification so the checker evaluates fragment links directly against actual `H2-H6` headings rather than falling back to whole-page titles, significantly improving accuracy[cite: 5, 6].
+
+**Evaluating & Maintaining the Link Checker:**
+*   **False-Positive Tolerance:** This was answered by a real incident during this build—an automated fetch returned a false 404 for a page that was actually live[cite: 5]. *The lesson:* A single HTTP error is not proof of a `BROKEN` link[cite: 5]. Production versions must implement retry/backoff logic before flagging[cite: 5]. Conversely, `ANCHOR_MISMATCH` is a softer human-in-the-loop signal designed to catch naming drift, so it safely tolerates higher noise[cite: 5].
+*   **Preventing Staleness & Degradation:** The ground-truth index (`known_pages.json`) is a point-in-time snapshot that must run on a schedule or docs-deploy hook[cite: 5]. To detect metric degradation, we track `ANCHOR_MISMATCH` rates periodically; if the true-finding rate drops, the site's naming conventions have likely drifted from what the similarity heuristic assumes[cite: 5].
+
+-----
+## Module 2: Semantic Drift (`semantic_drift_checker.py`)
+Because Rule 1 ("does this sentence assert a new capability") requires semantic judgment rather than regex, this module uses a two-stage pipeline with an LLM in the loop[cite: 5].
+
+**Engineering Decisions:**
+*   **Stage A (Mechanical Context-Gathering):** Automatically extracts definitional sentences via regex[cite: 5]. I iterated on this mid-build: passing isolated sentences caused the model to miss structural violations[cite: 7]. I refactored Stage A to capture and pass the enclosing section heading, section length, and surrounding paragraph to Stage B[cite: 7].
+*   **Stage B (LLM-Evaluator):** Classifies definitions as `CONSISTENT`, `DRIFT`, or `DISTINCT_CONCEPT`[cite: 5]. I explicitly added the `DISTINCT_CONCEPT` classification after stress-testing against Claude Tag, which deliberately uses "connection" differently from "connector"[cite: 5]. A naive two-bucket checker would have falsely penalized this valid taxonomy difference[cite: 5].
+*   **Key Catch:** With the expanded context window, the model successfully caught a hidden Rule 5 violation: a Gov skills page duplicating a 25-sentence canonical authoring guide[cite: 7]. It also successfully flagged previously undocumented semantic drift, catching Gov docs claiming plugins include "hooks"—a capability entirely absent from canonical docs[cite: 5, 7].
+
+**Evaluating & Maintaining the Semantic Checker:**
+*   **False-Positive Tolerance:** `DRIFT` is a high-cost, action-triggering verdict that burns developer trust if wrong[cite: 5]. The concrete mechanism that keeps its false-positive rate near zero is the `DISTINCT_CONCEPT` bucket, ensuring the checker isn't forced to label valid domain distinctions as drift[cite: 5].
+*   **Detecting Degradation:** Track Stage A's candidate extraction counts run-over-run. Unexplained drops indicate the regex is silently missing edge cases (e.g., a Markdown trailing-backslash artifact I had to patch mid-build)[cite: 5, 7]. For the model, the 11 definitional candidates extracted in this run serve as a free, hand-labeled golden set for regression testing future LLM updates[cite: 5].
+*   **Preventing Model Staleness:** The LLM evaluator cannot rely on hardcoded model strings (e.g., `claude-sonnet-4-5`)[cite: 5]. The script now extracts this to an environment variable (`ANTHROPIC_MODEL`) and catches API failures with clear error logs pointing to the model ID, turning a silent crash from a deprecated model into a loud, fixable configuration update[cite: 5].
