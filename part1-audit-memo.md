@@ -37,7 +37,7 @@ The current shape is flat — a page list per primitive plus a number of surface
 
 **Tier 1: Concepts (Canonical).** One page per primitive defining what it is, how it relates to the other two, and its availability. Surface pages must link here, not re-derive. Includes a unified trust/verification model for all three primitives.
 
-**Tier 2: Build / Author.** Standardized /<primitive>/build/ paths. (This fixes the Connectors bloat by nesting MCP Tunnels and Apps as sub-features, not top-level siblings).
+**Tier 2: Build / Author.** Standardized `/<primitive>/build/` paths. (This fixes the Connectors bloat by nesting MCP Tunnels and Apps as sub-features, not top-level siblings).
 
 **Tier 3: Use in [Surface].** Pages for Cowork, Gov, M365, etc. Restricted *only* to surface-specific installation, UI, and admin limits.
 
