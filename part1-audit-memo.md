@@ -1,6 +1,6 @@
 # Part 1 — Audit Memo: Skills, Plugins, Connectors
 
-**Methodology:** Findings rely on cross-referencing llms.txt with sitemap.xml, manually validated against live pages to eliminate crawler artifacts.
+**Methodology:** Findings come from a full manual review of the Skills/Plugins/Connectors slice — the same ~50-page scrape later used to build the Part 3 checkers — cross-referenced against llms.txt and sitemap.xml to catch pages one index missed and the other didn't, then validated against the live pages to rule out crawler artifacts. Findings are prioritized by user-facing consequence first: P0 covers active risk or a broken path a reader can hit today; P1 covers the structural causes behind repeated drift, which don't break anything by themselves but keep generating P0s. Out of scope: platform.claude.com/docs and code.claude.com/docs — adjacent surfaces with their own ownership, not part of this slice.
 
 ---
 
