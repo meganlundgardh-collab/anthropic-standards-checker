@@ -11,7 +11,7 @@ Surface pages may summarize a primitive for context (1-2 sentences), but must no
 
 Grounding the claim in the surface itself doesn't count as drift. E.g. "A plugin is a package that extends what Claude can do in Cowork" is a faithful paraphrase of the canonical "Plugins are reusable capability packages that extend Claude with custom functionality" — it adds *where*, not *what*. 
 
-*Exception*: Distinct, domain-specific concepts that share terminology (e.g., Claude Tag's admin-scoped "connection") are exempt.
+*Exception*: Distinct, domain-specific concepts that share terminology (e.g., Claude Tag's admin-scoped "connection") are exempt - see Stage B of the semantic checker prototype. 
 
 **Rule 2 — Component lists must match the canonical exactly.**
 Any page that lists what a primitive *contains* (e.g., "a plugin can contain X, Y, Z") must reproduce the canonical page's list exactly — same items, same order — or omit the list and link instead.
