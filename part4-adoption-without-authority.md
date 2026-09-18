@@ -2,7 +2,7 @@
 
 Adoption starts by making the standard cheaper to follow than to ignore.
 
-**Show the concrete improvement, don't just dump findings.** Before asking a team to adopt anything, I run the checker against their own pages and bring them a concrete "before and after" — much like the Cowork Plugins rewrite in Part 2. Seeing a five-minute fix that replaces a drifted component list and resolves broken links lands as a low-cost win. A policy ask competes with their roadmap; a clear before/after doesn't.
+**Show the concrete improvement, don't just dump findings.** Before asking a team to adopt anything, I'd run the checker against their own pages and bring them a concrete "before and after" — much like the Cowork Plugins rewrite in Part 2. Seeing a five-minute fix that replaces a drifted component list and resolves broken links lands as a low-cost win. A policy ask competes with their roadmap; a clear before/after doesn't.
 
 **Reframe the ask around shared data.** Broken links and drifted definitions don't just hurt content quality; they drive up support tickets and cause search drop-off. By tying the checker's output to metrics that adjacent product and support leaders already track, the standard becomes a shared operational goal rather than just a content preference.
 
