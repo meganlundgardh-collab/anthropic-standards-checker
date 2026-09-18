@@ -61,7 +61,7 @@ This covers semantic_drift_checker.py (rules 1 & 5). Evaluating whether a senten
 
 - **Detecting degradation:** Two mechanisms are needed. First, track Stage A's candidate extraction counts run-over-run; an unexplained drop indicates the regex is silently missing new edge cases. Second, the 11 definitional candidates extracted in this run serve as a free, hand-labeled golden set. Re-running Stage B against them after an LLM version update provides a direct regression check.
 
-- **Preventing staleness:** The LLM evaluator cannot rely on hardcoded model strings (e.g., claude-sonnet-4-5, which is scheduled for deprecation). I moved this to an environment variable (ANTHROPIC_MODEL) and wrapped the API call to catch failures with clear error logs pointing to the model ID—turning a silent crash from a deprecated model into a loud, fixable configuration update. Additionally, the hardcoded list of surface pages must be dynamically generated in production so newly shipped pages aren't silently skipped.
+- **Preventing staleness:** The LLM evaluator cannot rely on hardcoded model strings (e.g., claude-sonnet-4-5, which is scheduled for deprecation). I moved this to an environment variable (ANTHROPIC_MODEL) and wrapped the API call to catch failures with clear error logs pointing to the model ID — turning a silent crash from a deprecated model into a loud, fixable configuration update. Additionally, the hardcoded list of surface pages must be dynamically generated in production so newly shipped pages aren't silently skipped.
 
 ## Files
 
