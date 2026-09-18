@@ -9,6 +9,7 @@ Slice audited: **Skills, Plugins, and Connectors** — the take-home's suggested
 - **[Part 2 — Before/after](./part2-before-after-cowork-plugins.md)** — `cowork/guide/plugins.md` rewritten against the Part 2 template, with a note on what changed and why.
 - **[Part 3 — Checker system](./part3/)** — two working checker prototypes run against a 50-page scrape of the real docs, plus how I'd evaluate the checkers themselves. Start with [`part3/README.md`](./part3/README.md).
 - **[Part 4 — Adoption without authority](./part4-adoption-without-authority.md)** — how to get adoption from teams that don't report to this role, and what to do about a team that ignores it.
+- **[Session transcript](./session-transcript.md)** and **[plan.md](./plan.md)** — the full working process behind all four parts: research, decisions, corrections, and the AI-assisted back-and-forth, sent alongside the deliverables per the assignment's ask.
 
 ## Running the checkers
 
