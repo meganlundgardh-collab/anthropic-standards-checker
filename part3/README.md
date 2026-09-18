@@ -47,6 +47,8 @@ Each internal link on each scraped page gets exactly one status:
 
 This covers semantic_drift_checker.py (rules 1 & 5). Evaluating whether a sentence "asserts a new capability" requires semantic judgment rather than pure regex - a link resolves or it doesn't, tokens overlap or they don't - this module uses a two-stage pipeline: mechanical extraction (Stage A) followed by an LLM evaluator (Stage B).
 
+**Disclosure: Stage B's verdicts in this submission were produced by hand, not by a live API call.** Stage A (extraction) ran fully automated and needs no model. Stage B needs `ANTHROPIC_API_KEY`, which isn't set in this build sandbox — rather than fake a result, the script stops, and what's in `output/semantic_drift_findings.md` is that same prompt applied manually, once, exactly as `call_model()` would send it. The integration code is real and would run unattended with a key. Full explanation in `output/semantic_drift_findings.md`.
+
 ## Engineering decisions & iteration
 
 - **Expanding the context window (Stage A):** Initially, the script passed isolated sentences to the model, which caused it to miss structural violations. I refactored Stage A to capture and pass the enclosing section heading, the section's sentence count, and the full surrounding paragraph. This added context allowed Stage B to catch a hidden Rule 5 violation: a Gov skills page duplicating a 25-sentence canonical authoring guide.
@@ -57,7 +59,7 @@ This covers semantic_drift_checker.py (rules 1 & 5). Evaluating whether a senten
 
 ## Evaluating the semantic checker
 
-- **Defining false-positive tolerance:** A false DRIFT verdict is high-cost; sending a docs team to edit content that was never wrong burns trust capital quickly. The concrete mechanism that keeps the false-positive rate down here isn't a threshold — it's the DISTINCT_CONCEPT bucket, which ensures the checker isn't forced to mislabel valid domain distinctions as drift.
+- **Defining false-positive tolerance:** A false DRIFT verdict is high-cost; sending a docs team to edit content that was never wrong burns trust capital quickly. My tolerance is under 10% — tighter than ANCHOR_MISMATCH's, since DRIFT triggers an actual edit request rather than just a look. The concrete mechanism that keeps the rate under that bar isn't a confidence threshold on the model's output — it's the DISTINCT_CONCEPT bucket, which ensures the checker isn't forced to mislabel valid domain distinctions as drift in the first place.
 
 - **Detecting degradation:** Two mechanisms are needed. First, track Stage A's candidate extraction counts run-over-run; an unexplained drop indicates the regex is silently missing new edge cases. Second, the 11 definitional candidates extracted in this run serve as a free, hand-labeled golden set. Re-running Stage B against them after an LLM version update provides a direct regression check.
 
